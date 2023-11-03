@@ -11,6 +11,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap');
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css');
   @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css');
+
+  @import url('https://code.jquery.com/jquery-3.4.1.min.js');
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js');
 </style>
 
 <script>
@@ -23,6 +26,14 @@
       loadScripts() {
         const scriptUrls = [
         '/public/js/main.js',
+
+        '/assets/assets/lib/wow/wow.min.js',
+        '/assets/assets/lib/easing/easing.min.js',
+    '/assets/assets/lib/waypoints/waypoints.min.js',
+    '/assets/assets/lib/owlcarousel/owl.carousel.min.js',
+    '/assets/assets/lib/tempusdominus/js/moment.min.js',
+    '/assets/assets/lib/tempusdominus/js/moment-timezone.min.js',
+    '/assets/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js',
 
         ];
 

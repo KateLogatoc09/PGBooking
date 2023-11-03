@@ -7,7 +7,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">PGBooking</h4>
                     <a class="btn btn-link" href="#" id="classy">About Us</a>
-                    <a class="btn btn-link" href="#" id="classy">Contact Us</a>
+                    <a class="btn btn-link" href="/Contact" id="classy">Contact Us</a>
                     <a class="btn btn-link" href="#" id="classy">Privacy Policy</a>
                     <a class="btn btn-link" href="#" id="classy">Terms & Condition</a>
                     <a class="btn btn-link" href="#" id="classy">FAQs & Help</a>
@@ -55,14 +55,14 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">PGBooking</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="/">PGBooking</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                             <a href="#">Cookies</a>
                             <a href="#">Help</a>
                             <a href="#">FQAs</a>
