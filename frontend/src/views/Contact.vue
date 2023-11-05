@@ -2,7 +2,7 @@
 	<div>
 
 <heady/>
-<contactbanner/>
+<navi/>
 <contactus/>
 <footerr/>
 
@@ -12,12 +12,12 @@
   <script>
 
 import heady from"@/components/heady.vue";
-import contactbanner from"@/components/inc/contactbanner.vue";
+import navi from"@/components/inc/navigation.vue";
 import contactus from"@/components/content/contactus.vue";
 import footerr from"@/components/inc/footerr.vue";
 export default {
   components: {
-    heady,contactbanner,contactus,footerr
+    heady,navi,contactus,footerr
   }
 };
 </script>

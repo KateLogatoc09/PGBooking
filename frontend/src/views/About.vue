@@ -2,7 +2,7 @@
 	<div>
 
 <heady/>
-<aboutbanner/>
+<navi/>
 <about/>
 <footerr/>
 
@@ -12,12 +12,12 @@
   <script>
 
 import heady from"@/components/heady.vue";
-import aboutbanner from"@/components/inc/aboutbanner.vue";
+import navi from"@/components/inc/navigation.vue";
 import about from"@/components/content/about.vue";
 import footerr from"@/components/inc/footerr.vue";
 export default {
   components: {
-    heady,aboutbanner,about,footerr
+    heady,navi,about,footerr
   }
 };
 </script>

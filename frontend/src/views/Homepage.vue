@@ -1,12 +1,12 @@
 <template>
 	<div>
 <heady/>
-<navy/>
-<bgsearch/>
+<navi/>
 <about/>
 <service/>
 <tophotel/>
 <hotels/>
+<subscribe/>
 <footerr/>
 
   
@@ -15,16 +15,16 @@
   <script>
 
 import heady from"@/components/heady.vue";
-import navy from"@/components/inc/navy.vue";
-import bgsearch from"@/components/inc/bgsearch.vue";
+import navi from"@/components/inc/navigation.vue";
 import about from"@/components/content/about.vue";
 import service from"@/components/content/service.vue";
 import tophotel from"@/components/content/tophotel.vue";
 import hotels from"@/components/content/hotels.vue";
+import subscribe from"@/components/inc/subscribe.vue";
 import footerr from"@/components/inc/footerr.vue";
 export default {
   components: {
-    heady,navy,bgsearch,service,about,tophotel,hotels,footerr
+    heady,navi,service,about,tophotel,hotels,subscribe,footerr
   }
 };
 </script>
