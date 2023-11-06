@@ -21,15 +21,7 @@
                         <router-link to="/About" tag="a" class="nav-item nav-link" exact>About</router-link>
                         <router-link to="/Services" tag="a" class="nav-item nav-link" exact>Services</router-link>
                         <router-link to="/Hotels" tag="a" class="nav-item nav-link" exact>Hotels</router-link>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <router-link to="/Destinations" tag="a" class="dropdown-item" exact>Destinations</router-link>
-                                <router-link to="/Booking" tag="a" class="dropdown-item" exact>Booking</router-link>
-                                <router-link to="/Travel-Guides" tag="a" class="dropdown-item" exact>Travel Guides</router-link>
-                                <router-link to="/Testimonials" tag="a" class="dropdown-item" exact>Testimonials</router-link>
-                            </div>
-                        </div>
+                        <router-link to="/admin" tag="a" class="nav-item nav-link" exact>Admin</router-link>
                         <router-link to="/Contact" tag="a" class="nav-item nav-link" exact>Contact</router-link>
                     </div>
                     <div class="d-flex justify-content-center mb-2">
