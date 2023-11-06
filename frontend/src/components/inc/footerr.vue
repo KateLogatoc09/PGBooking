@@ -6,7 +6,7 @@
             <div class="row g-5"  id="classy2">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">PGBooking</h4>
-                    <a class="btn btn-link" href="#">About Us</a>
+                    <a class="btn btn-link" href="/About">About Us</a>
                     <a class="btn btn-link" href="/Contact">Contact Us</a>
                     <a class="btn btn-link" href="#">Privacy Policy</a>
                     <a class="btn btn-link" href="#">Terms & Condition</a>
