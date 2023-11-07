@@ -1,8 +1,8 @@
 <style>
 /* Import your CSS files here */
-  @import '@/assets/assets/lib/animate/animate.min.css';
-  @import '@/assets/assets/lib/owlcarousel/assets/owl.carousel.min.css';
-  @import '@/assets/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css';
+  @import '@/assets/assets/css/animate.min.css';
+  @import '@/assets/assets/css/owl.carousel.min.css';
+  @import '@/assets/assets/css/tempusdominus-bootstrap-4.min.css';
   @import '@/assets/assets/css/style.css';
   @import '@/assets/assets/css/bootstrap.min.css';
 
@@ -27,13 +27,13 @@
         const scriptUrls = [
         '/public/js/main.js',
 
-        '/assets/assets/lib/wow/wow.min.js',
-        '/assets/assets/lib/easing/easing.min.js',
-    '/assets/assets/lib/waypoints/waypoints.min.js',
-    '/assets/assets/lib/owlcarousel/owl.carousel.min.js',
-    '/assets/assets/lib/tempusdominus/js/moment.min.js',
-    '/assets/assets/lib/tempusdominus/js/moment-timezone.min.js',
-    '/assets/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js',
+        '/public/js/lib/wow/wow.min.js',
+        '/public/js/lib/easing/easing.min.js',
+    '/public/js/lib/waypoints/waypoints.min.js',
+    '/public/js/lib/owlcarousel/owl.carousel.min.js',
+    '/public/js/lib/tempusdominus/js/moment.min.js',
+    '/public/js/lib/tempusdominus/js/moment-timezone.min.js',
+    '/public/js/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js',
 
         ];
 
