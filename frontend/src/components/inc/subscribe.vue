@@ -7,20 +7,20 @@
             <div class="booking p-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-6 text-white" id="classy2">
-                        <h6 class="text-white text-uppercase">Subscription</h6>
+                        <h6 class="text-white text-uppercase">Puerto Galera Tourism</h6>
                         <h1 class="text-white mb-4">Be Updated!</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Read More</a>
+                        <p class="mb-4">Welcome to Puerto Galera Tourism Office Hotel Registration</p>
+                        <p class="mb-4">Fill up all the information needed</p>
+           
                     </div>
                     <div class="col-md-6">
-                        <h1 class="text-white mb-4 text-center" id="classy2">Subscribe to Newsletter</h1>
+                        <h1 class="text-white mb-4 text-center" id="classy2">Puerto Galera Tourism</h1>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-12" id="color">
                                     <div class="form-floating">
                                         <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
+                                        <label for="name">Your Hotel Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12"  id="color">
@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Subscribe Now</button>
+                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Register Now</button>
                                 </div>
                             </div>
                         </form>
