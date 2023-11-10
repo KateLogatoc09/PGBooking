@@ -6,7 +6,6 @@
 <service/>
 <tophotel/>
 <hotels/>
-<subscribe/>
 <footerr/>
 
   

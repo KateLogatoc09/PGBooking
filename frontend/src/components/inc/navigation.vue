@@ -20,7 +20,7 @@
                         <router-link to="/" tag="a" class="nav-item nav-link" exact>Home</router-link>
                         <router-link to="/About" tag="a" class="nav-item nav-link" exact>About</router-link>
                         <router-link to="/Services" tag="a" class="nav-item nav-link" exact>Services</router-link>
-                        <router-link to="/Hotels" tag="a" class="nav-item nav-link" exact>Hotels</router-link>
+                        <router-link to="/Hotels" tag="a" class="nav-item nav-link" exact>Hotels Registration</router-link>
                         <router-link to="/admin" tag="a" class="nav-item nav-link" exact>Admin</router-link>
                         <router-link to="/Contact" tag="a" class="nav-item nav-link" exact>Contact</router-link>
                     </div>
