@@ -12,26 +12,26 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s"  id="classy2">
                     <h6 class="section-title bg-white text-start secondary-text pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to <span class="secondary-text">PGBooking</span></h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="mb-4">Puerto Galera is a soothing vision of shimmering seas surrounded by lush mountains. It is considered one of the most beautiful and developed beach resort community in the country.</p>
+                    <p class="mb-4">Starting from “backyard tourism” wherein local residents accept local and foreign tourist as stay-in guest, the island’s tourism has flourished. In the course of time, several hotels, resorts, inns and restaurants have mushroomed within the area.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>First Class Flights</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Diving Capital of the Philippines</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Handpicked Hotels</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Quality Service</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>5 Star Accommodations</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Amazing Accommodations</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Latest Model Vehicles</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Natural Attractions</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>150 Premium City Tours</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>Cheaper Yet More Fun</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>24/7 Service</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right main-text me-2"></i>World-Class Destinations</p>
                         </div>
                     </div>
                     <a class="btn main-btn py-3 px-5 mt-2" href="">Read More</a>

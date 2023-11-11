@@ -14,9 +14,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6"  id="classy2">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+639272817508</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+639610086587</p>
+                    <p class="size"><i class="fa fa-envelope me-3"></i>puertogaleraoffice@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3"  id="classy2">Gallery</h4>

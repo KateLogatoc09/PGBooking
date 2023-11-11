@@ -12,14 +12,14 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     
                     <h5>Get In Touch</h5>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos</p>
+                    <p class="mb-4">If you have any questions or in need of clarification, please let us know.</p>
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-map-marker-alt text-white"></i>
+                            <i class="fa fa-phone-alt text-white"></i>
                         </div>
                         <div class="ms-3">
-                            <h5 class="secondary-text">Office</h5>
-                            <p class="mb-0">123 Street, New York, USA</p>
+                            <h5 class="secondary-text">Mobile</h5>
+                            <p class="mb-0">+639272817508</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4">
@@ -28,7 +28,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="secondary-text">Mobile</h5>
-                            <p class="mb-0">+012 345 67890</p>
+                            <p class="mb-0">+639610086587</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -37,7 +37,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="secondary-text">Email</h5>
-                            <p class="mb-0">info@example.com</p>
+                            <p class="mb-0">puertogaleraoffice@gmail.com</p>
                         </div>
                     </div>
                 </div>
