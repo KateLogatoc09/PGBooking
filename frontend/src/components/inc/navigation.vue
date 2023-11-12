@@ -10,10 +10,11 @@
                 </a>
                 
                 <!-- for editing-->
-                <button class="navbar-toggler main-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler main-btn" type="button" data-bs-toggle="collapse" @click="menubar">
                     <span class="fa fa-bars"></span>
                 </button>
                 <!--Create Menu-->
+
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
@@ -30,6 +31,25 @@
                     </div>
                 </div>
             </nav>
+
+            <Transition>
+                <div class='menu' v-if="open">
+                  <center>
+                  <ul id="links">
+                    <router-link to="/" tag="li" class="link" exact>Home</router-link><hr>
+                    <router-link to="/About" tag="li" class="link" exact>About</router-link><hr>
+                    <router-link to="/Services" tag="li" class="link" exact>Services</router-link><hr>
+                    <router-link to="/Hotels" tag="li" class="link" exact>Hotels</router-link><hr>
+                    <router-link to="/admin" tag="li" class="link" exact>Admin</router-link><hr>
+                    <router-link to="/Contact" tag="li" class="link" exact>Contact</router-link><hr>
+                    <!--v-if login session-->
+                    <router-link to="/Login" tag="li" class="link" exact>Login</router-link><hr>
+                    <router-link to="/Register" tag="li" class="link" exact>Register</router-link><hr>
+                    <router-link to="/Account" tag="li" class="link" exact>Account</router-link><hr>
+                  </ul>
+                  </center>
+                </div>
+                </Transition>
 
             <div v-if="Home()" class="container-fluid bg-primary py-5 mb-5 hero-header cover">
                 <div class="container py-5">
@@ -84,7 +104,21 @@
 
 <script>
 export default {
+  data() {
+      return{
+      open: false,
+      }
+    },
     methods: {
+      menubar: function() {
+        if(this.open){
+          this.open = false;
+          return this.open;
+        }else{
+          this.open = true;
+          return this.open;
+        }
+      },
       Home() {
         if(this.$route.path == "/") {
           return true
