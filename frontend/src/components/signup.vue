@@ -3,7 +3,7 @@
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div>
-                <h1 class="text-white mb-4 text-center" id="classy2">Register To PGBooking</h1>
+                <h1 class="text-white mb-4 text-center" id="classy2">Register Account</h1>
                 <form>
                 <div class="row g-5 align-items-center">
                     <div class="col-md-6 text-white" id="classy2">

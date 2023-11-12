@@ -398,10 +398,10 @@
         width: 300px;
     }
     .back{
-        margin-top: 124px;
+        margin-top: 98px;
     }
     .hero-header{
-        margin-top: 100px;
+        margin-top: 98px;
     }
 }
 
@@ -521,10 +521,36 @@
     color:gainsboro;
 }
 
+.dark{
+    color: violet;
+    font-style: oblique;
+}
+
+.violet{
+    color:purple;
+}
+
 .back{
     background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/booking.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: -48px;
+}
+
+#space{
+    margin-left: 80px;
+}
+
+#space2{
+    margin-top: 25px;
+}
+#space3{
+    margin-right: 20px;
+}
+
+.book{
+    background-color: #c37ce1;
+    color: var(--dark);
+    padding-top: 20px;
 }

@@ -5,7 +5,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="sticky navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="heading m-0"><i class="fa fa-map-marker-alt me-3"></i>PGBooking</h1>
+                    <h1 class="heading m-0"><i class="fa fa-book me-3"></i>PGBooking</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 
@@ -20,7 +20,7 @@
                         <router-link to="/" tag="a" class="nav-item nav-link" exact>Home</router-link>
                         <router-link to="/About" tag="a" class="nav-item nav-link" exact>About</router-link>
                         <router-link to="/Services" tag="a" class="nav-item nav-link" exact>Services</router-link>
-                        <router-link to="/Hotels" tag="a" class="nav-item nav-link" exact>Hotels Registration</router-link>
+                        <router-link to="/Hotels" tag="a" class="nav-item nav-link" exact>Hotels</router-link>
                         <router-link to="/admin" tag="a" class="nav-item nav-link" exact>Admin</router-link>
                         <router-link to="/Contact" tag="a" class="nav-item nav-link" exact>Contact</router-link>
                     </div>

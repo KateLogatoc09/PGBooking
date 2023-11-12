@@ -30,6 +30,7 @@
                                 <div class="col-12">
                                     <button class="btn btn-outline-light w-100 py-3" type="submit">Login Now</button>
                                 </div>
+                                <a href="#" class="dark">Forgot Password?</a>
                             </div>
                         </form>
                     </div>
