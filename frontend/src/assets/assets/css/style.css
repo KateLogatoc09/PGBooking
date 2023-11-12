@@ -75,6 +75,46 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
+  /*Vue Classes*/
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease;
+  }
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
+  }
+  /*Vue end*/
+  .link {
+    color: white;
+  }
+  .link.active{
+    color: var(--primary) !important;
+    font-weight: 1000;
+  }
+  .link:hover {
+    color: var(--primary) !important;
+  }
+  .menu {
+    font-family: "Inter", sans-serif;
+    width:100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index:100;
+    position: fixed;
+    background-color: rgba(0,0,0,70%);
+    color:white;
+    padding: 0;
+  }
+  #links {
+    list-style-type:none ;
+    padding: 0;
+    padding-top: 3dvh !important;
+  }
+  hr {
+    margin: 0;
+  }
+  /* End */
 
 
 /*** Spinner ***/
