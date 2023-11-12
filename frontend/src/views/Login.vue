@@ -1,14 +1,22 @@
 <template>
-    <div>
-        <br>
-        <h1>Log In</h1>
-        <br>
-        <form>
-            <label for="email">Email: </label>
-            <input type="email" placeholder="email"><br><br>
-            <label for="password">Password: </label>
-            <input type="password" placeholder="password"><br><br>
-            <button type="submit">Log In</button><br><br>      
-        </form>
-    </div>
-</template>
+	<div>
+
+<heady/>
+<navi/>
+<signin/>
+<footerr/>
+  
+	</div>
+  </template>
+  <script>
+
+import heady from"@/components/heady.vue";
+import navi from"@/components/inc/navigation.vue";
+import signin from"@/components/signin.vue";
+import footerr from"@/components/inc/footerr.vue";
+export default {
+  components: {
+    heady, navi, signin, footerr
+  }
+};
+</script>

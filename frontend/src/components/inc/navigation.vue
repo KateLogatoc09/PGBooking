@@ -46,6 +46,12 @@
                 </div>
             </div>
 
+            <div v-else-if="Login()">
+            </div>
+
+            <div v-else-if="Register()">
+            </div>
+
             <div v-else class="container-fluid bg-primary py-5 mb-5 hero-header cover">
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
@@ -81,6 +87,20 @@ export default {
     methods: {
       Home() {
         if(this.$route.path == "/") {
+          return true
+        } else {
+          return false
+        }
+      },
+      Login() {
+        if(this.$route.path == "/Login") {
+          return true
+        } else {
+          return false
+        }
+      },
+      Register() {
+        if(this.$route.path == "/Register") {
           return true
         } else {
           return false

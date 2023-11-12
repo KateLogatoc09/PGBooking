@@ -5,7 +5,6 @@
     --light: #F5F5F5;
     --dark: #14141F;
 }
-
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -380,10 +379,16 @@
     z-index: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
+    }
+    .back{
+        margin-top: 54px;
+    }
+    .hero-header{
+        margin-top: 66px;
     }
 }
 
@@ -391,6 +396,12 @@
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
+    }
+    .back{
+        margin-top: 124px;
+    }
+    .hero-header{
+        margin-top: 100px;
     }
 }
 
@@ -508,4 +519,12 @@
 
 #color{
     color:gainsboro;
+}
+
+.back{
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/booking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -48px;
 }
