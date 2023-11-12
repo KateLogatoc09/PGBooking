@@ -20,19 +20,64 @@
                                 <div class="col-md-12" id="color">
                                     <div class="form-floating">
                                         <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
-                                        <label for="name">Your Hotel Name</label>
+                                        <label for="name">Hotel Name</label>
                                     </div>
                                 </div>
-                                <div class="col-md-12"  id="color">
+                                <div class="col-md-12" id="color">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Description</label>
                                     </div>
                                 </div>
+
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload your picture</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload a scanned copy of Mayor's Permit</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload a scanned copy of Discharge Permit</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload a scanned copy of Insurance</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload a scanned copy of Self-Assessment Form</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload a scanned copy of Application Form</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Upload a scanned copy of Letter of Intent to Operate</label>
+                                    </div>
+                                </div>
+                                
+                             
                                 <div class="col-md-12"  id="color">
                                     <div class="form-floating">
                                         <input type="tel" maxlength="11" pattern="[0][9][0-9]{9}" class="form-control bg-transparent" id="number" placeholder="Your Phone Number (09XXXXXXXXX)" required>
-                                        <label for="number">Your Phone Number</label>
+                                        <label for="number">Contact Number</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
