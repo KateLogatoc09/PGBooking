@@ -1,22 +1,22 @@
 <template>
-	<div>
+	<div id="app">
 
-<heads/>
-<index/> 
-
+<add/>
+<navy/>
+<foot/>
 
   
 	</div>
   </template>
   <script>
 
-import heads from"@/components/admin/heads.vue";
-import index from"@/components/admin/index.vue";
-
-
+import add from"@/components/Admin/add.vue";
+import navy from"@/components/Admin/navy.vue";
+import foot from"@/components/Admin/footer.vue";
+//import prod from"@/components/laman/prod.vue";
 export default {
   components: {
-    heads,index
+    add,navy, foot
   }
 };
 </script>

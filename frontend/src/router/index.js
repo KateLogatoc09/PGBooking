@@ -7,7 +7,7 @@ import Services from '../views/Services.vue'
 import Hotels from '../views/Hotels.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
-import Admin from '../views/admin.vue'
+import Admin from '../views/Admin.vue'
 
 const routes = [
   {
@@ -20,7 +20,7 @@ const routes = [
     component: Homepage
   },
   {
-    path: '/admin',
+    path: '/Admin',
     name: Admin,
     component: Admin
   },
