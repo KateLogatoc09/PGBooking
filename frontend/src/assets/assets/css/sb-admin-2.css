@@ -12,7 +12,7 @@
  */
 :root {
   --blue: violet;
-  --indigo: #6610f2;
+  --indigo: violet;
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #e74a3b;
@@ -166,7 +166,7 @@ a {
 }
 
 a:hover {
-  color: #224abe;
+  color: violet;
   text-decoration: underline;
 }
 
@@ -2333,8 +2333,10 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: purple;
+  color: purple !important;
   text-decoration: none;
+  background-color: #CF9FFF !important;
+  box-shadow: 2px 2px 2px gold;
 }
 
 .btn:focus, .btn.focus {
@@ -2914,7 +2916,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #224abe;
+  color: violet;
   text-decoration: underline;
 }
 
@@ -4770,7 +4772,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #224abe;
+  color: violet;
   text-decoration: none;
   background-color: #eaecf4;
   border-color: #dddfeb;
@@ -9597,7 +9599,7 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #224abe !important;
+  color: violet !important;
 }
 
 .text-secondary {
@@ -9902,7 +9904,7 @@ a:focus {
 
 .bg-gradient-primary {
   background-color: purple;
-  background-image: linear-gradient(180deg, purple 10%, #224abe 100%);
+  background-image: linear-gradient(180deg, purple 10%, violet 100%);
   background-size: cover;
 }
 

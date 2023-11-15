@@ -78,7 +78,7 @@
                         <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
                             <h1 v-if="About()" class="display-3 text-white animated slideInDown">About Us</h1>
                             <h1 v-if="Services()" class="display-3 text-white animated slideInDown">Services</h1>
-                            <h1 v-if="Hotels()" class="display-3 text-white animated slideInDown">Hotels</h1>
+                            <h1 v-if="Hotels()" class="display-3 text-white animated slideInDown sizy">Hotels & Resorts</h1>
                             <h1 v-if="Contact()" class="display-3 text-white animated slideInDown">Contact Us</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
@@ -86,7 +86,7 @@
                                     <router-link to="/Pages" tag="li" class="breadcrumb-item main-text" exact>Pages</router-link>
                                     <router-link v-if="About()" to="/About" tag="li" class="breadcrumb-item text-white" exact>About</router-link>
                                     <router-link v-if="Services()" to="/Services" tag="li" class="breadcrumb-item text-white" exact>Services</router-link>
-                                    <router-link v-if="Hotels()" to="/Hotels" tag="li" class="breadcrumb-item text-white" exact>Hotels</router-link>
+                                    <router-link v-if="Hotels()" to="/Hotels" tag="li" class="breadcrumb-item text-white" exact>Hotels & Resorts</router-link>
                                     <router-link v-if="Contact()" to="/Contact" tag="li" class="breadcrumb-item text-white" exact>Contact</router-link>
                                 </ol>
                             </nav>

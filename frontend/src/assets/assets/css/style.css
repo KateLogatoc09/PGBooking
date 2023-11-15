@@ -551,7 +551,7 @@
 }
 
 #classy2{
-    text-align: left;
+    text-align: left !important;
 }
 
 #color{
@@ -580,7 +580,7 @@
 }
 
 #space{
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 #space2{
@@ -610,4 +610,41 @@
 
 .sizy{
     font-size: 60px !important;
+}
+
+.page-header {
+    background: url(@/assets/assets/images/booking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texty{
+    color: white !important;
+    text-shadow: 5px 2px 2px black;
+    margin-top: 10px;
+    text-align: left;
+}
+.texty2{
+    color: black !important;
+    text-shadow: 5px 2px 2px white;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.star{
+    color: gold;
+    font-size: 30px;
+    text-shadow: 5px 2px 2px black;
+    align-items: left;
+}
+.nobr{
+    display: inline;
+}
+
+.back2{
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/booking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

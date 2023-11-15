@@ -12,7 +12,7 @@
            
                     </div>
                     <div class="col-md-6">
-                        <h1 class="text-white mb-4 text-center" id="classy2">Log In Now</h1>
+                        <h1 class="text-white mb-4 text-center" id="classy">Log In Now</h1>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-12"  id="color">
