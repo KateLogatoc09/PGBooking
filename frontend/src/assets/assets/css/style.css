@@ -72,9 +72,6 @@
 .size{
     font-size: 15px;
 }
-::-webkit-scrollbar {
-    width: 10px;
-}
   /*Vue Classes*/
   .v-enter-active,
   .v-leave-active {
@@ -558,7 +555,11 @@
 }
 
 #color{
-    color:gainsboro;
+    color:gainsboro !important;
+}
+
+.white{
+    color: white !important;
 }
 
 .dark{
@@ -593,4 +594,16 @@
     background-color: #c37ce1;
     color: var(--dark);
     padding-top: 20px;
+}
+
+#marg{
+    margin-top: 4px;
+}
+
+.marg2{
+    margin-bottom: 40px;
+}
+
+.breadcrumb{
+    background-color: transparent !important;
 }
