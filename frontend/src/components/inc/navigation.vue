@@ -55,7 +55,7 @@
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
                         <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                            <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                            <h1 class="display-3 text-white mb-3 animated slideInDown sizy">Enjoy Your Vacation With Us</h1>
                             <p class="fs-4 text-white mb-4 animated slideInDown">Puerto Gallera Tourism</p>
                             <div class="position-relative w-75 mx-auto animated slideInDown">
                                 <input class="form-control border-0 rounded-pill w-100 py-4 ps-4 pe-5" type="text" placeholder="Eg: Hotel">
