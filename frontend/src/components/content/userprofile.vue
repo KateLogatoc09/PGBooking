@@ -292,6 +292,8 @@ export default{
                 }
             };
 
+            const photo = document.getElementById('photo').files[0];
+            
             let data = new FormData();
             data.append('photo', photo);
             data.append('token', sessionStorage.getItem('jwt'));
@@ -321,6 +323,12 @@ export default{
 
                 if(tour_info_save.data.msg === 'okay') {
                     alert('Your profile information was changed successfully');
+                } else if (tour_info_save.data.msg === 'duplicate email.') {
+                    alert('Email not available.');
+                } else if (tour_info_save.data.msg === 'duplicate phone.') {
+                    alert('Phone number not available.');
+                } else if (tour_info_save.data.msg === 'duplicate username.') {
+                    alert('Username not available.');
                 } else {
                     alert(tour_info_save.data.msg);
                 }
