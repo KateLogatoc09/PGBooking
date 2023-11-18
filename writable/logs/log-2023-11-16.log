@@ -1,0 +1,583 @@
+CRITICAL - 2023-11-16 12:57:12 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:57:16 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:57:17 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:57:17 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:57:17 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:57:18 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:57:19 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:58:25 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 12:59:38 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('$data', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('$data', false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert('$data', false)
+ 4 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save('$data')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 13:03:20 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'tourists_account.phone' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\backend\app\Controllers\Account.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+#10 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 13:03:20 --> Duplicate entry '2147483647' for key 'tourists_account.phone'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tourists_account` (`username`, `email`, `password`, `token`, `phone`, `address`, `status`) VALUES (:username:, :email:, :password:, :token:, :phone:, :address:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 13:07:46 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'tourists_account.phone' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\backend\app\Controllers\Account.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+#10 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 13:07:46 --> Duplicate entry '2147483647' for key 'tourists_account.phone'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tourists_account` (`username`, `email`, `password`, `token`, `phone`, `address`, `status`) VALUES (:username:, :email:, :password:, :token:, :phone:, :address:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 13:08:56 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'tourists_account.phone' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\backend\app\Controllers\Account.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+#10 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 13:08:56 --> Duplicate entry '2147483647' for key 'tourists_account.phone'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tourists_account` (`username`, `email`, `password`, `token`, `phone`, `address`, `status`) VALUES (:username:, :email:, :password:, :token:, :phone:, :address:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Account.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:15:43 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 62.
+ 1 APPPATH\Controllers\Account.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:17:39 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 62.
+ 1 APPPATH\Controllers\Account.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:19:59 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 62.
+ 1 APPPATH\Controllers\Account.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:24:59 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:28:17 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:28:46 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:29:20 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:31:22 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:32:00 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:32:41 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:33:36 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:35:08 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:35:08 --> Undefined variable $temail
+in APPPATH\Controllers\Account.php on line 70.
+ 1 APPPATH\Controllers\Account.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temail', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:39:15 --> Undefined variable $user
+in APPPATH\Controllers\Account.php on line 56.
+ 1 APPPATH\Controllers\Account.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 14:41:16 --> Undefined variable $user
+in APPPATH\Controllers\Account.php on line 56.
+ 1 APPPATH\Controllers\Account.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Login_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 17:49:24 --> mysqli_sql_exception: Table 'pgt.tourists_infos' doesn't exist in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-16 17:49:24 --> Table 'pgt.tourists_infos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_infos`
+WHERE `user_id` = :user_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 17:50:25 --> mysqli_sql_exception: Table 'pgt.tourists_infos' doesn't exist in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-16 17:50:25 --> Table 'pgt.tourists_infos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_infos`
+WHERE `user_id` = :user_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 17:54:20 --> mysqli_sql_exception: Table 'pgt.tourists_infos' doesn't exist in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-16 17:54:20 --> Table 'pgt.tourists_infos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_infos`
+WHERE `user_id` = :user_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 17:57:17 --> mysqli_sql_exception: Table 'pgt.tourists_infos' doesn't exist in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-16 17:57:17 --> Table 'pgt.tourists_infos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_infos`
+WHERE `user_id` = :user_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(134): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 17:58:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 134.
+ 1 APPPATH\Controllers\Account.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:00:13 --> Undefined variable $check
+in APPPATH\Controllers\Account.php on line 136.
+ 1 APPPATH\Controllers\Account.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $check', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:05:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 134.
+ 1 APPPATH\Controllers\Account.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:06:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 135.
+ 1 APPPATH\Controllers\Account.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:07:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 135.
+ 1 APPPATH\Controllers\Account.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:07:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 135.
+ 1 APPPATH\Controllers\Account.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:08:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 135.
+ 1 APPPATH\Controllers\Account.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:11:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 135.
+ 1 APPPATH\Controllers\Account.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:13:12 --> Undefined array key "username"
+in APPPATH\Controllers\Account.php on line 137.
+ 1 APPPATH\Controllers\Account.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:13:35 --> Undefined array key "émail"
+in APPPATH\Controllers\Account.php on line 138.
+ 1 APPPATH\Controllers\Account.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "émail"', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 138)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:14:05 --> Undefined array key "émail"
+in APPPATH\Controllers\Account.php on line 138.
+ 1 APPPATH\Controllers\Account.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "émail"', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 138)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:16:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 141.
+ 1 APPPATH\Controllers\Account.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:20:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 141.
+ 1 APPPATH\Controllers\Account.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:20:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 135.
+ 1 APPPATH\Controllers\Account.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:21:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 137.
+ 1 APPPATH\Controllers\Account.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:21:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 141.
+ 1 APPPATH\Controllers\Account.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:21:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 137.
+ 1 APPPATH\Controllers\Account.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:23:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 137.
+ 1 APPPATH\Controllers\Account.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:23:31 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 137.
+ 1 APPPATH\Controllers\Account.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:23:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 137.
+ 1 APPPATH\Controllers\Account.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:23:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 141.
+ 1 APPPATH\Controllers\Account.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 18:25:10 --> Undefined array key "émail"
+in APPPATH\Controllers\Account.php on line 153.
+ 1 APPPATH\Controllers\Account.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "émail"', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 20:39:57 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Account.php on line 174.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\backend\\app\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 20:40:44 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Account.php on line 174.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\backend\\app\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 20:42:23 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Account.php on line 174.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\backend\\app\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 20:42:32 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Account.php on line 174.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\backend\\app\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 20:47:34 --> Call to a member function move() on null
+in APPPATH\Controllers\Account.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
