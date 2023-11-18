@@ -70,16 +70,18 @@
                 <h1 class="mb-5">Past Bookings</h1>
             </div>
             <div class="row g-4"  id="classy2">
-                <div class="col-lg-14 col-md-5 wow fadeInUp book" data-wow-delay="0.1s" id="space3">
+
+                <div v-for="booking in booking" class="col-lg-14 col-md-5 wow fadeInUp book" data-wow-delay="0.1s" id="space3"> 
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-building text-white"></i>
                         </div>
                         <div class="ms-3">
                             <h5 class="secondary-text">Hotel</h5>
-                            <p class="mb-0">Hotel</p>
+                            <p class="mb-0"></p>
                         </div>
                     </div>
+                    
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker text-white"></i>
@@ -89,6 +91,7 @@
                             <p class="mb-0">Location</p>
                         </div>
                     </div>
+
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-calendar-alt text-white"></i>
@@ -98,6 +101,7 @@
                             <p class="mb-0">Date</p>
                         </div>
                     </div>
+
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-credit-card text-white"></i>
@@ -107,6 +111,7 @@
                             <p class="mb-0">Price</p>
                         </div>
                     </div>
+
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-star text-white"></i>
@@ -116,6 +121,7 @@
                             <p class="mb-0">Leave a Rating</p>
                         </div>
                     </div>
+
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-comment text-white"></i>
@@ -126,62 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-14 col-md-5 wow fadeInUp book" data-wow-delay="0.1s" id="space3">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-building text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="secondary-text">Hotel</h5>
-                            <p class="mb-0">Hotel</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4" id="space2">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-map-marker text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="secondary-text">Location</h5>
-                            <p class="mb-0">Location</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-calendar-alt text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="secondary-text">Date Booked</h5>
-                            <p class="mb-0">Date</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4" id="space2">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-credit-card text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="secondary-text">Price Paid</h5>
-                            <p class="mb-0">Price</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4" id="space2">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-star text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="secondary-text">Rating</h5>
-                            <p class="mb-0">Leave a Rating</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4" id="space2">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
-                            <i class="fa fa-comment text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="secondary-text">Review</h5>
-                            <p class="mb-0">Leave a Review</p>
-                        </div>
-                    </div>
-                </div> 
+
             </div>
         </div>
     </div>
@@ -191,3 +142,33 @@
 
     </div>
 </template>
+<script>
+import router from '@/router'
+import axios from 'axios'
+export default{
+    data(){
+        return{
+            booking:[],
+        }
+    },
+    created(){
+        this.booking_info()
+    },
+    methods:{
+        async booking_info(){
+            try {
+                const book_info = await axios.post("Booking_Info_Past", {
+                    token: sessionStorage.getItem('jwt'),
+                });
+
+                if(book_info.data.msg === 'okay') {
+                    this.booking = book_info.data;
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        },
+    }
+}
+</script>

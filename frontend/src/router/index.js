@@ -8,6 +8,7 @@ import Hotels from '../views/Hotels.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Admin from '../views/Admin.vue'
+import Tourist from '../views/Tourist.vue'
 
 const routes = [
   {
@@ -52,13 +53,21 @@ const routes = [
   {
     path: '/register',
     name: Register,
-    component: Register
+    component: Register,
+    meta: {requiresAuth: false}
   },
 
   {
     path: '/login',
     name: Login,
-    component: Login
+    component: Login,
+    meta: {requiresAuth: false}
+  },
+  
+  {
+    path: '/tourist_account',
+    component: Tourist,
+    meta: {requiresAuth: true}
   },
 ]
 
@@ -67,5 +76,24 @@ const router = createRouter({
   linkExactActiveClass: "active",
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  const isLoggedin = checkUserLogin();
+  if (to.matched.some((record) => record.meta.requiresAuth)) {
+    if(!isLoggedin) {
+      next("/login");
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+}); 
+
+function checkUserLogin() {
+  const userToken = sessionStorage.getItem('jwt');
+  return !!userToken;
+}
+
 
 export default router

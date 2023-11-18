@@ -64,6 +64,7 @@
 </template>
 
 <script>
+import router from '@/router';
 import axios from 'axios';
 export default{
     data(){
@@ -89,16 +90,21 @@ export default{
                     phone:this.phone,
                     address:this.address,
                 
-                }).then((response) => { 
-                    if (response.status === 200) {
-                        alert('You have successfully registered.'); 
-                    } 
-                }).catch(error => { 
-                    // handle error 
-                    if (error.response.status === 409) { 
-                        alert('A user already with that email, username or phone number.');  
-                    } 
                 });
+
+                if(reg_tour.data.msg === 'Registered Successfully') {
+                    alert(reg_tour.data.msg); 
+                    router.push('/login');
+                } else if (reg_tour.data.msg === 'A user exists with that email. Please change your email.') {
+                    alert(reg_tour.data.msg);
+                } else if (reg_tour.data.msg === 'A user exists with that username. Please change your username.') {
+                    alert(reg_tour.data.msg); 
+                } else if (reg_tour.data.msg === 'A user exists with that phone number. Please change your phone number.') {
+                    alert(reg_tour.data.msg); 
+                } else {
+                    alert(reg_tour.data.msg);
+                }
+
             } catch (error) {
                 console.log(error);
             }
