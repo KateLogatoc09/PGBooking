@@ -13,7 +13,6 @@
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-float w-100 h-80" :src='url + info.photo' alt="" style="object-fit: cover;">
-                        <a @click="showform()" class="violet">Change Photo</a><i class="fa fa-wrench text-black"></i>
                     </div>
                 </div>
 
@@ -25,7 +24,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Username</h6>
                             <h6>{{ info.username }}</h6>
-                            <a @click="showform()" class="violet">Change Username</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -35,7 +33,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Email</h6>
                             <h6>{{ info.email }}</h6>
-                            <a @click="showform()" class="violet">Change Email</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -45,7 +42,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Mobile</h6>
                             <h6>{{ info.phone }}</h6>
-                            <a @click="showform()" class="violet">Change Number</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -55,7 +51,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Address</h6>
                             <h6>{{ info.address }}</h6>
-                            <a @click="showform()" class="violet">Change Address</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4">
@@ -65,7 +60,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Gender</h6>
                             <h6>{{ info.gender }}</h6>
-                            <a @click="showform()" class="violet">Change Gender</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                 </div>
@@ -78,7 +72,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Birthdate</h6>
                             <h6>{{ info.birthdate }}</h6>
-                            <a @click="showform()" class="violet">Change Birthdate</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -88,7 +81,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">First Name: </h6>
                             <h6>{{ info.first_name }}</h6>
-                            <a @click="showform()" class="violet">Change First Name</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -98,7 +90,6 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Middle Name: </h6>
                             <h6>{{ info.middle_name }}</h6>
-                            <a @click="showform()" class="violet">Change Middle Name</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -108,9 +99,9 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Last Name: </h6>
                             <h6>{{ info.last_name }}</h6>
-                            <a @click="showform()" class="violet">Change Last Name</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
+                    <button @click="showform()" class="btn main-btn py-3 px-5 mt-2 buttoncolor">Edit Details</button>
                 </div>
             </div>
 
