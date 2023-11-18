@@ -6,7 +6,7 @@
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center secondary-text px-3">Account Settings</h6>
-                <h1 class="mb-5">Your Profile</h1>
+                <h1 class="mb-5">New Profile</h1>
             </div>
             <div v-if="!show" class="row g-4"  id="classy2">
 
@@ -129,7 +129,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Username</h6>
-                                <input type="text" class="form-control" id="username" placeholder="Your Username" v-model="username" :placeholder='info.username' required>
+                                <input type="text" class="form-control" id="username" placeholder="New Username" v-model="username" :placeholder='info.username' required>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -230,7 +230,91 @@
     </div>
     <!-- Contact End -->
     
+    <div class="back">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div>
+                <h1 class="text-white mb-4 text-center" id="classy">Update Information</h1>
+                <form @submit.prevent="reg_tourist">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white" id="classy2">
+                        <div class="row g-3">
+                        <div class="col-md-12"  id="color">
+                                <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Email" required>
+                                        <label for="email">Email</label>
+                                 </div>
+                            </div>
+                            <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="username" placeholder="Username" required>
+                                        <label for="username">Username</label>
+                                    </div>
+                                </div>
+                        <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="date" minlength="8" class="form-control bg-transparent" id="birthdate" placeholder="Birthdate" required>
+                                        <label for="birthdate">Birthdate</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="gender" placeholder="Gender" required>
+                                        <label for="gender">Gender</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12"  id="color">
+                                    <div class="form-floating">
+                                        <input type="tel" maxlength="11" class="form-control bg-transparent" id="number" @input="phonecheck()" placeholder="Phone Number (09XXXXXXXXX)" required>
+                                        <label for="number">Phone Number</label>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="row g-3">
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="lname" placeholder="First Name" required>
+                                        <label for="fname">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="mname" placeholder="Middle Name" required>
+                                        <label for="mname">Middle Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="lname" placeholder="Last Name" required>
+                                        <label for="lname">Last Name</label>
+                                    </div>
+                                </div>
 
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="address" placeholder="Address" required>
+                                        <label for="address">Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="photo" placeholder="Photo" required>
+                                        <label for="photo">Upload New Photo</label>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-12">
+                                    <button class="btn btn-outline-light w-50 py-3" type="submit">Update Info</button>
+                                </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 
@@ -311,7 +395,7 @@ export default{
                 const tour_info_save = await axios.post("Tourist_Info_Edit", data, config);
 
                 if(tour_info_save.data.msg === 'okay') {
-                    alert('Your profile information was changed successfully');
+                    alert('New profile information was changed successfully');
                 } else {
                     alert(tour_info_save.data.msg);
                 }
@@ -339,7 +423,7 @@ export default{
             if (num.value.match(format)) {
                 num.setCustomValidity('');
             } else {
-                num.setCustomValidity('Your Phone Number must follow this format: 09XXXXXXXXX');
+                num.setCustomValidity('New Phone Number must follow this format: 09XXXXXXXXX');
             }
         },
 

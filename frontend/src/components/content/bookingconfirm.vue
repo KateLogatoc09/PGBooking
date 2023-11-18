@@ -19,21 +19,21 @@
                             <div class="row g-3">
                                 <div class="col-md-12"  id="color">
                                     <div class="form-floating">
-                                        <input type="tel" maxlength="50" class="form-control bg-transparent" id="guest" placeholder="Number of Guest">
+                                        <input type="tel" maxlength="50" class="form-control bg-transparent" id="guest" placeholder="Number of Guest" required>
                                         <label for="guest">Number of Guest</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12" id="color">
                                     <div class="form-floating">
-                                        <input type="datetime-local" class="form-control bg-transparent" id="date" placeholder="Date Schedule">
+                                        <input type="datetime-local" class="form-control bg-transparent" id="date" placeholder="Date Schedule" required>
                                         <label for="date">Date Schedule</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12" id="color">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="instructions" placeholder="Specisl Instructions">
+                                        <input type="text" class="form-control bg-transparent" id="instructions" placeholder="Specisl Instructions" required>
                                         <label for="instructions">Special Instructions</label>
                                     </div>
                                 </div>
