@@ -552,6 +552,9 @@
     .hero-header{
         margin-top: 66px;
     }
+    .marg3{
+        margin-top: 80px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -564,6 +567,11 @@
     }
     .hero-header{
         margin-top: 98px;
+    }
+        
+    .marg3{
+        margin-top: 98px;
+        margin-bottom: -48px;
     }
 }
 

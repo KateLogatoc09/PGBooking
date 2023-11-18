@@ -80,6 +80,9 @@
             <div v-else-if="HotelAcc()">
             </div>
 
+            <div v-else-if="Registerhotel()">
+            </div>
+
             <div v-else class="container-fluid bg-primary py-5 mb-5 hero-header cover">
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
@@ -184,6 +187,13 @@ export default {
       },
       HotelAcc() {
         if(this.$route.path == "/hotelacc") {
+          return true
+        } else {
+          return false
+        }
+      },
+      Registerhotel() {
+        if(this.$route.path == "/registerhotel") {
           return true
         } else {
           return false

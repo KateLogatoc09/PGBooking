@@ -55,6 +55,7 @@
                     <div class="col-12">
                         <button class="btn btn-outline-light w-50 py-3" type="submit">Register Now</button>
                     </div>
+                    <a class="dark" href="/registerhotel">Register Hotel/Resort</a>
                 </div>
             </form>
             </div>

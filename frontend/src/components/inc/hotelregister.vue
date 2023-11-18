@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="back2">
+        <div class="back2 marg3">
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div>

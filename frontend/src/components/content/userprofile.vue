@@ -129,7 +129,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Username</h6>
-                                <input type="text" id="username" name="username" v-model="username" :placeholder='info.username' required>
+                                <input type="text" class="form-control" id="username" placeholder="Your Username" v-model="username" :placeholder='info.username' required>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -138,7 +138,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Email</h6>
-                                <input type="email" id="email" name="email" v-model="email" :placeholder='info.email' required>
+                                <input type="email" class="form-control" id="email" name="email" v-model="email" :placeholder='info.email' required>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">

@@ -3,7 +3,7 @@
 
 <heady/>
 <navi/>
-<hotels/>
+<hotelregister/>
 <footerr/>
 
   
@@ -13,11 +13,11 @@
 
 import heady from"@/components/heady.vue";
 import navi from"@/components/inc/navigation.vue";
-import hotels from"@/components/content/hotels.vue";
+import hotelregister from"@/components/inc/hotelregister.vue";
 import footerr from"@/components/inc/footerr.vue";
 export default {
   components: {
-    heady,navi,hotels,footerr
+    heady,navi,hotelregister,footerr
   }
 };
 </script>
