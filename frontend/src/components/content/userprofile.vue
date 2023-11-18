@@ -4,16 +4,19 @@
      <!-- Contact Start -->
      <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div @data-saved="tourist_info()" class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center secondary-text px-3">Account Settings</h6>
                 <h1 class="mb-5">Your Profile</h1>
+            </div>
+            <div>
+                <h6 v-if="show" @click="showform()" class="bg-white secondary-text px-3 pointer" id="back"><span id="back">&#8882;</span>Go Back</h6>
             </div>
             <div v-if="!show" class="row g-4"  id="classy2">
 
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-float w-100 h-80" :src='url + info.photo' alt="" style="object-fit: cover;">
-                        <a @click="showform()" class="violet">Change Photo</a><i class="fa fa-wrench text-black"></i>
+                        <a @click="showform()" class="violet pointer">Change Photo</a><i class="fa fa-wrench text-black"></i>
                     </div>
                 </div>
 
@@ -25,7 +28,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Username</h6>
                             <h6>{{ info.username }}</h6>
-                            <a @click="showform()" class="violet">Change Username</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Username</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -35,7 +38,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Email</h6>
                             <h6>{{ info.email }}</h6>
-                            <a @click="showform()" class="violet">Change Email</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Email</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -45,7 +48,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Mobile</h6>
                             <h6>{{ info.phone }}</h6>
-                            <a @click="showform()" class="violet">Change Number</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Number</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -55,7 +58,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Address</h6>
                             <h6>{{ info.address }}</h6>
-                            <a @click="showform()" class="violet">Change Address</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Address</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4">
@@ -65,7 +68,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Gender</h6>
                             <h6>{{ info.gender }}</h6>
-                            <a @click="showform()" class="violet">Change Gender</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Gender</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                 </div>
@@ -78,7 +81,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Birthdate</h6>
                             <h6>{{ info.birthdate }}</h6>
-                            <a @click="showform()" class="violet">Change Birthdate</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Birthdate</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -88,7 +91,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">First Name: </h6>
                             <h6>{{ info.first_name }}</h6>
-                            <a @click="showform()" class="violet">Change First Name</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change First Name</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -98,7 +101,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Middle Name: </h6>
                             <h6>{{ info.middle_name }}</h6>
-                            <a @click="showform()" class="violet">Change Middle Name</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Middle Name</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
@@ -108,7 +111,7 @@
                         <div class="ms-3">
                             <h6 class="secondary-text">Last Name: </h6>
                             <h6>{{ info.last_name }}</h6>
-                            <a @click="showform()" class="violet">Change Last Name</a><i class="fa fa-wrench text-black"></i>
+                            <a @click="showform()" class="violet pointer">Change Last Name</a><i class="fa fa-wrench text-black"></i>
                         </div>
                     </div>
                 </div>
@@ -119,7 +122,7 @@
 
 
             <div v-if="show" class="row g-4"  id="classy2">
-                <form @submit.prevent="edit()" enctype="multipart/form-data">
+                <form @submit.prevent="edit" enctype="multipart/form-data">
                     <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s" style="min-height: 400px;">
                         <div class="position-relative h-100">
                             <img v-if="prevurl" :src="prevurl" class="img-fluid position-float w-100 h-80" alt="" id="profilephoto" style="object-fit: cover;">
@@ -138,7 +141,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Username</h6>
-                                <input type="text" id="username" name="username" v-model="username" :placeholder='info.username' required>
+                                <input type="text" id="username" name="username" v-model="username" :placeholder='info.username' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -147,7 +150,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Email</h6>
-                                <input type="email" id="email" name="email" v-model="email" :placeholder='info.email' required>
+                                <input type="email" id="email" name="email" v-model="email" :placeholder='info.email' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
@@ -156,7 +159,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Mobile</h6>
-                                <input @input="phonecheck()" type="tel" id="phone" maxlength='11' name="phone" v-model="phone" :placeholder='info.phone' required>
+                                <input type="tel" id="phone" maxlength='11' name="phone" v-model="phone"  @input="phonecheck()" :placeholder='info.phone' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
@@ -165,7 +168,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Address</h6>
-                                <input type="text" id="address" name="address" v-model="address" :placeholder='info.address' required>
+                                <input type="text" id="address" name="address" v-model="address" :placeholder='info.address' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
@@ -174,7 +177,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Gender</h6>
-                                <select id="gender" v-model="gender" name="gender" required>
+                                <select id="gender" v-model="gender" name="gender" :placeholder="info.gender" required>
                                     <option value="Female">Female</option>
                                     <option value="Male">Male</option>
                                     <option value="Others">Others</option>
@@ -190,7 +193,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Birthdate</h6>
-                                <input type="date" id="birthdate" name="birthdate" v-model="birthdate" :placeholder='info.birthdate' required>
+                                <input type="date" id="birthdate" name="birthdate" v-model="birthdate" :placeholder='info.birthdate' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
@@ -199,7 +202,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">First Name: </h6>
-                                <input type="text" id="first_name" name="first_name" v-model="first_name" :placeholder='info.first_name' required>
+                                <input type="text" id="first_name" name="first_name" v-model="first_name" :placeholder='info.first_name' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
@@ -208,7 +211,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Middle Name: </h6>
-                                <input type="text" id="middle_name" name="middle_name" v-model="middle_name" :placeholder='info.middle_name' required>
+                                <input type="text" id="middle_name" name="middle_name" v-model="middle_name" :placeholder='info.middle_name' required/>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
@@ -217,7 +220,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Last Name: </h6>
-                                <input type="text" id="last_name" name="last_name" v-model="last_name" :placeholder='info.last_name' required>
+                                <input type="text" id="last_name" name="last_name" v-model="last_name" :placeholder='info.last_name' required/>
                             </div>
                         </div>
                     </div>
@@ -307,22 +310,13 @@ export default{
             data.append('birthdate', this.birthdate);
             data.append('gender', this.gender);
 
-            /*token: sessionStorage.getItem('jwt'),
-                    username: this.username,
-                    email: this.email,
-                    phone: this.phone,
-                    address: this.address,
-                    first_name: this.first_name,
-                    middle_name: this.middle_name,
-                    last_name: this.last_name,
-                    birthdate: this.birthdate,
-                    gender: this.gender,
-                    photo:, */
             try {
                 const tour_info_save = await axios.post("Tourist_Info_Edit", data, config);
 
                 if(tour_info_save.data.msg === 'okay') {
                     alert('Your profile information was changed successfully');
+                    this.tourist_info();
+                    this.showform();
                 } else if (tour_info_save.data.msg === 'duplicate email.') {
                     alert('Email not available.');
                 } else if (tour_info_save.data.msg === 'duplicate phone.') {
