@@ -60,7 +60,7 @@
                     </div>
                     <div class="d-flex align-items-center mb-4">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                            <i class="fa fa-id-badge text-white"></i>
+                            <i class="fa fa-male text-white"></i>
                         </div>
                         <div class="ms-3">
                             <h6 class="secondary-text">Gender</h6>
@@ -73,7 +73,7 @@
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                            <i class="fa fa-envelope-open text-white"></i>
+                            <i class="fa fa-calendar-alt text-white"></i>
                         </div>
                         <div class="ms-3">
                             <h6 class="secondary-text">Birthdate</h6>
@@ -83,7 +83,7 @@
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                            <i class="fa fa-phone-alt text-white"></i>
+                            <i class="fa fa-id-card text-white"></i>
                         </div>
                         <div class="ms-3">
                             <h6 class="secondary-text">First Name: </h6>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                            <i class="fa fa-phone-alt text-white"></i>
+                            <i class="fa fa-id-card-alt text-white"></i>
                         </div>
                         <div class="ms-3">
                             <h6 class="secondary-text">Middle Name: </h6>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                            <i class="fa fa-phone-alt text-white"></i>
+                            <i class="fa fa-id-card text-white"></i>
                         </div>
                         <div class="ms-3">
                             <h6 class="secondary-text">Last Name: </h6>
@@ -170,7 +170,7 @@
                         </div>
                         <div class="d-flex align-items-center mb-4">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                                <i class="fa fa-id-badge text-white"></i>
+                                <i class="fa fa-male text-white"></i>
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Gender</h6>
@@ -186,7 +186,7 @@
                     <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                                <i class="fa fa-envelope-open text-white"></i>
+                                <i class="fa fa-calendar-alt text-white"></i>
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Birthdate</h6>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                                <i class="fa fa-phone-alt text-white"></i>
+                                <i class="fa fa-id-card text-white"></i>
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">First Name: </h6>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                                <i class="fa fa-phone-alt text-white"></i>
+                                <i class="fa fa-id-card-alt text-white"></i>
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Middle Name: </h6>
@@ -213,7 +213,7 @@
                         </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 75px; height: 75px;">
-                                <i class="fa fa-phone-alt text-white"></i>
+                                <i class="fa fa-id-card text-white"></i>
                             </div>
                             <div class="ms-3">
                                 <h6 class="secondary-text">Last Name: </h6>
