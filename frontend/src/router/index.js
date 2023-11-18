@@ -9,6 +9,7 @@ import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Admin from '../views/Admin.vue'
 import Tourist from '../views/Tourist.vue'
+import HotelAcc from '../views/HotelAcc.vue'
 
 const routes = [
   {
@@ -48,6 +49,12 @@ const routes = [
     path: '/hotels',
     name: Hotels,
     component: Hotels
+  },
+
+  {
+    path: '/hotelacc',
+    name: HotelAcc,
+    component: HotelAcc
   },
 
   {

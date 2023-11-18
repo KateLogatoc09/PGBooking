@@ -730,7 +730,7 @@
 }
 
 #marg{
-    margin-top: 4px;
+    margin-top: 9px !important;
 }
 
 .marg2{
@@ -780,4 +780,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.purple{
+    color: violet;
+}
+
+.justify{
+    text-align: justify;
 }
