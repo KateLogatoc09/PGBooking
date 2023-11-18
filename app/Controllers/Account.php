@@ -173,74 +173,174 @@ class Account extends ResourceController
         $data = $this->tourist->select('id')->where('token', sha1($token))->First();
         $check = $this->tourist_inf->where('user_id', $data['id'])->First();
         if ($check) {
+            $username = $this->request->getVar('username');
+            $email = $this->request->getVar('email');
+            $phone = $this->request->getVar('phone');
+            
+            $cond_email = array('id !=' => $data['id'], 'email' => $email);
+            $cond_uname = array('id !=' => $data['id'], 'username' => $username);
+            $cond_phone = array('id !=' => $data['id'], 'phone' => $phone);
 
-            $file = $this->request->getFile('photo');
-            $test = $file->move(PUBLIC_PATH.'\\'.$data['id'].'\\');
-            $name = $file->getClientPath();
-            $path = '/'.$data['id'].'/'.$name;
+            $checkdupliemail = $this->tourist->where($cond_email)->First();
+            $checkdupliuname = $this->tourist->where($cond_uname)->First();
+            $checkdupliphone = $this->tourist->where($cond_phone)->First();
 
-            if ($test) {
-                $data1 = [
-                    'first_name' => $this->request->getVar('firstname'),
-                    'middle_name' => $this->request->getVar('middlename'),
-                    'last_name' => $this->request->getVar('lastname'),
-                    'birthdate' => $this->request->getVar('birthdate'),
-                    'gender' => $this->request->getVar('gender'),
-                    'photo' => $path,
-                ];
-                $data2 =[
-                    'username' => $this->request->getVar('username'),
-                    'email' => $this->request->getVar('email'),
-                    'phone' => $this->request->getVar('phone'),
-                    'address' => $this->request->getVar('address'),
-                ];
-                $res = $this->tourist_inf->set($data1)->where('user_id', $data['id'])->update();
-                $acc = $this->tourist->set($data2)->where('token', sha1($token))->update();
-                if ($res && $acc) {
-                    return $this->respond(['msg' => 'okay'], 200);
-                } else {
-                    return $this->respond(['msg' => 'an error has occurred'], 200);
-                }
-
+            if ($checkdupliemail) {
+                return $this->respond(['msg' => 'duplicate email.'], 200);
+            } else if($checkdupliphone) {
+                return $this->respond(['msg' => 'duplicate phone.'], 200);
+            } else if($checkdupliuname) {
+                return $this->respond(['msg' => 'duplicate username.'], 200);
             } else {
-                return $this->respond(['msg' => 'Can\'t save file.'], 200);
-            }
+                $file = $this->request->getFile('photo');
+                if($file != null) {
+
+                    $test = $file->move(PUBLIC_PATH.'\\'.$data['id'].'\\');
+                    $name = $file->getClientPath();
+                    $path = '/'.$data['id'].'/'.$name;
+                    
+                    if ( ! $test) {
+                        return $this->respond(['msg' => 'can\'t save image.'], 200); 
+                    }else { 
+                        unlink(PUBLIC_PATH.$check['photo']);
+                        $data1 = [
+                            'first_name' => $this->request->getVar('first_name'),
+                            'middle_name' => $this->request->getVar('middle_name'),
+                            'last_name' => $this->request->getVar('last_name'),
+                            'gender' => $this->request->getVar('gender'),
+                            'photo' => $path,
+                        ];
+                        $data2 =[
+                            'username' => $username,
+                            'email' => $email,
+                            'phone' => $phone,
+                            'address' => $this->request->getVar('address'),
+                        ];
+        
+                        $res = $this->tourist_inf->set($data1)->where('user_id', $data['id'])->update();
+                        $acc = $this->tourist->set($data2)->where('token', sha1($token))->update();
+                        if ($res && $acc) {
+                            return $this->respond(['msg' => 'okay'], 200);
+                        } else {
+                            $delfile = PUBLIC_PATH.$path;
+                            unlink($delfile); 
+                            return $this->respond(['msg' => 'an error has occurred'], 200);
+                        }
+                    } 
+                } else {
+                    $data1 = [
+                        'first_name' => $this->request->getVar('first_name'),
+                        'middle_name' => $this->request->getVar('middle_name'),
+                        'last_name' => $this->request->getVar('last_name'),
+                        'gender' => $this->request->getVar('gender'),
+                        'photo' => $check['photo'],
+                    ];
+                    $data2 =[
+                        'username' => $username,
+                        'email' => $email,
+                        'phone' => $phone,
+                        'address' => $this->request->getVar('address'),
+                    ];
+    
+                    $res = $this->tourist_inf->set($data1)->where('user_id', $data['id'])->update();
+                    $acc = $this->tourist->set($data2)->where('token', sha1($token))->update();
+                    if ($res && $acc) {
+                        return $this->respond(['msg' => 'okay'], 200);
+                    } else {
+                        $delfile = PUBLIC_PATH.$path;
+                        unlink($delfile); 
+                        return $this->respond(['msg' => 'an error has occurred'], 200);
+                    }
+                }
+            }       
+        //save
         } else {
-            $file = $this->request->getFile('photo');
-            $test = $file->move(PUBLIC_PATH.'\\'.$data['id'].'\\');
-            $name = $file->getClientPath();
-            $path = '/'.$data['id'].'/'.$name;
+            $username = $this->request->getVar('username');
+            $email = $this->request->getVar('email');
+            $phone = $this->request->getVar('phone');
+            
+            $cond_email = array('id !=' => $data['id'], 'email' => $email);
+            $cond_uname = array('id !=' => $data['id'], 'username' => $username);
+            $cond_phone = array('id !=' => $data['id'], 'phone' => $phone);
 
-            if ($test) {
-                $data1 = [
-                    'first_name' => $this->request->getVar('firstname'),
-                    'middle_name' => $this->request->getVar('middlename'),
-                    'last_name' => $this->request->getVar('lastname'),
-                    'birthdate' => $this->request->getVar('birthdate'),
-                    'gender' => $this->request->getVar('gender'),
-                    'photo' => $path,
-                    'user_id' => $data['id'],
-                ];
-                $data2 =[
-                    'username' => $this->request->getVar('username'),
-                    'email' => $this->request->getVar('email'),
-                    'phone' => $this->request->getVar('phone'),
-                    'address' => $this->request->getVar('address'),
-                ];
-                $res = $this->tourist_inf->save($data1);
-                $acc = $this->tourist->set($data2)->where('token', sha1($token))->update();
-                if ($res && $acc) {
-                    return $this->respond(['msg' => 'okay'], 200);
-                } else {
-                    return $this->respond(['msg' => 'an error has occurred'], 200);
-                }
+            $checkdupliemail = $this->tourist->where($cond_email)->First();
+            $checkdupliuname = $this->tourist->where($cond_uname)->First();
+            $checkdupliphone = $this->tourist->where($cond_phone)->First();
 
+            if ($checkdupliemail) {
+                return $this->respond(['msg' => 'duplicate email.'], 200);
+            } else if($checkdupliphone) {
+                return $this->respond(['msg' => 'duplicate phone'], 200);
+            } else if($checkdupliuname) {
+                return $this->respond(['msg' => 'duplicate username'], 200);
             } else {
-                return $this->respond(['msg' => 'Can\'t save file.'], 200);
+
+                $file = $this->request->getFile('photo');
+                if($file != null) {
+
+                    $test = $file->move(PUBLIC_PATH.'\\'.$data['id'].'\\');
+                    $name = $file->getClientPath();
+                    $path = '/'.$data['id'].'/'.$name;
+
+                    if ( ! $test) {
+                        return $this->respond(['msg' => 'can\'t save image.'], 200); 
+                    }else { 
+                        $data1 = [
+                            'first_name' => $this->request->getVar('first_name'),
+                            'middle_name' => $this->request->getVar('middle_name'),
+                            'last_name' => $this->request->getVar('last_name'),
+                            'birthdate' => $this->request->getVar('birthdate'),
+                            'gender' => $this->request->getVar('gender'),
+                            'photo' => $path,
+                            'user_id' => $data['id'],
+                        ];
+                        $data2 =[
+                            'username' => $username,
+                            'email' => $email,
+                            'phone' => $phone,
+                            'address' => $this->request->getVar('address'),
+                        ];
+        
+                        $res = $this->tourist_inf->save($data1);
+                        $acc = $this->tourist->set($data2)->where('token', sha1($token))->update();
+                        if ($res && $acc) {
+                            return $this->respond(['msg' => 'okay'], 200);
+                        } else {
+                            $delfile = PUBLIC_PATH.$path;
+                            unlink($delfile); 
+                            return $this->respond(['msg' => 'an error has occurred'], 200);
+                        }
+                    } 
+                } else {
+                    $data1 = [
+                        'first_name' => $this->request->getVar('first_name'),
+                        'middle_name' => $this->request->getVar('middle_name'),
+                        'last_name' => $this->request->getVar('last_name'),
+                        'birthdate' => $this->request->getVar('birthdate'),
+                        'gender' => $this->request->getVar('gender'),
+                        'photo' => '/default.jpg',
+                        'user_id' => $data['id'],
+                    ];
+                    $data2 =[
+                        'username' => $username,
+                        'email' => $email,
+                        'phone' => $phone,
+                        'address' => $this->request->getVar('address'),
+                    ];
+    
+                    $res = $this->tourist_inf->save($data1);
+                    $acc = $this->tourist->set($data2)->where('token', sha1($token))->update();
+                    if ($res && $acc) {
+                        return $this->respond(['msg' => 'okay'], 200);
+                    } else {
+                        return $this->respond(['msg' => 'an error has occurred'], 200);
+                    }
+                }
             }
         }
         
     }
+
     public function Past_Booking() {
         $token = $this->request->getVar('token');
         $data = $this->tourist->select('tourists_account.id')->join('tourists_info','tourists_info.user_id = tourists_account.id','inner')->where('token', sha1($token))->First();
