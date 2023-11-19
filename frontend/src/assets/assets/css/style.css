@@ -601,7 +601,7 @@
 }
 
 .back{
-    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/booking.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/b3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -689,4 +689,15 @@
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
     padding-top: 1.8250rem !important;
     padding-bottom: .625rem;
+}
+
+.back3{
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/b4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pad{
+    padding-top: 10px !important;
 }

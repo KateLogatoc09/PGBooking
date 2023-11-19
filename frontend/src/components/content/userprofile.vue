@@ -105,7 +105,7 @@
                 </div>
             </div>
             
-            <div v-if="show" class="back">
+            <div v-if="show" class="back3">
                 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="container">
                         <div>
@@ -198,7 +198,7 @@
                                                 <div class="col-md-12" id="color">
                                                     <div class="form-floating">
                                                         <input type="file" class="form-control bg-transparent" id="photo" placeholder="Photo" @change="onFileChange" accept="image/*">
-                                                        <label for="photo">Upload New Photo</label>
+                                                        <label for="photo" class="pad">Upload New Photo</label>
                                                     </div>
                                                 </div>
                                             </div>
