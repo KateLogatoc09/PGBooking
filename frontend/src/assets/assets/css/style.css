@@ -687,6 +687,6 @@
 }
 
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
-    padding-top: 1.925rem !important;
+    padding-top: 1.8250rem !important;
     padding-bottom: .625rem;
 }
