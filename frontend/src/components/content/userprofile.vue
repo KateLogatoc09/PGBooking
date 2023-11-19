@@ -115,8 +115,8 @@
                                         <!-- image -->
                                         <div>
                                             <img v-show="prevurl" :src="prevurl" class="img-fluid position-float" alt="profile photo" id="profilephoto" style="object-fit: cover;">
-                                            <img v-show="!info.photo" :src="url + '/default.jpg'" class="img-fluid position-float" alt="profile photo" id="profilephoto" style="object-fit: cover;">
-                                            <img v-show="info.photo && !prevurl" class="img-fluid position-float" :src='url + info.photo' alt="" id="profilephoto" style="object-fit: cover;">
+                                            <img v-show="!info.photo" :src="url + '/default.jpg'" class="img-fluid2 position-float" alt="profile photo" id="profilephoto" style="object-fit: cover;">
+                                            <img v-show="info.photo && !prevurl" class="img-fluid2 position-float" :src='url + info.photo' alt="" id="profilephoto" style="object-fit: cover;">
                                         </div>
 
                                         <div class="col-md-6 text-white" id="classy2">
@@ -205,6 +205,9 @@
                                         </div>
                                     <div class="col-12">
                                         <button class="btn btn-outline-light w-50 py-3" type="submit" >Update Info</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-outline-light w-50 py-3">Go Back</button>
                                     </div>
                                 </div>
                             </form>
