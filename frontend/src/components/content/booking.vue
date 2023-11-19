@@ -37,6 +37,24 @@
                             <p class="mb-0">Date</p>
                         </div>
                     </div>
+                    <div class="d-flex align-items-center mb-4" id="space2">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
+                            <i class="fa fa-credit-card text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="secondary-text">Price</h5>
+                            <p class="mb-0">Price</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4" id="space2">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
+                            <i class="fa fa-male text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="secondary-text">Number of Guest</h5>
+                            <p class="mb-0">Guests</p>
+                        </div>
+                    </div>
                         <div class="d-flex align-items-center mb-4" id="space2">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 main-btn" style="width: 50px; height: 50px;">
                             <i class="fa fa-comment text-white"></i>
