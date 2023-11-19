@@ -1,55 +1,45 @@
 <template>
-  <div class="back">
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container">
-        <div>
-          <div class="row g-5 align-items-center">
-            <div class="col-md-6 text-white" id="classy2">
-              <h6 class="text-white text-uppercase">Puerto Galera Tourism</h6>
-              <h1 class="text-white mb-4">Hotel Log In</h1>
-              <p class="mb-4">Welcome to Hotel Login</p>
-              <p class="mb-4">Fill up all the information needed to login to your account.</p>
-
-            </div>
-            <div class="col-md-6">
-              <h1 class="text-white mb-4 text-center" id="classy">Hotel Log In</h1>
-              <form @submit.prevent="log_tourist">
-                <div class="row g-3">
-                  <div v-if='!changed' class="col-md-12" id="color">
-                    <div class="form-floating">
-                      <input type="text" class="form-control bg-transparent" id="username" placeholder="Your Username"
-                        v-model="username" required>
-                      <label for="username">Your Username</label>
+ <div class="back">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4 text-center" id="classy">Hotel & Resort Log In</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-12"  id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="username" placeholder="Your Username">
+                                        <label for="username">Your Username</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control bg-transparent" id="password" placeholder="Your Password">
+                                        <label for="password">Your Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Login Now</button>
+                                </div>
+                                <a class="dark">Log in with your email instead?</a>
+                                <router-link to="/Password_Recovery" tag="a" class="dark">Forgot Password?</router-link>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                  <div v-else class="col-md-12" id="color">
-                    <div class="form-floating">
-                      <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email"
-                        v-model="email" required>
-                      <label for="email">Your Email</label>
+                    <div class="col-md-6 text-white" id="classy">
+                        <h3 class="text-white text-uppercase">Puerto Galera: <br>Heart of Asia</h3>
+                        <p class="mb-4 justify">Nestled amidst verdant gardens and overlooking the azure Mindoro Strait, this renowned diving destination provides
+                      direct access to vibrant coral reefs, marine life, and shipwrecks. Luxurious villas blend nature with comfort, while the
+                      on-site restaurant serves a diverse culinary experience. Committed to sustainability, the resort offers eco-friendly
+                      adventures, making it an unforgettable destination for divers and nature enthusiasts alike.</p>
+         
                     </div>
-                  </div>
-                  <div class="col-md-12" id="color">
-                    <div class="form-floating">
-                      <input type="password" class="form-control bg-transparent" id="password" placeholder="Your Password"
-                        v-model="password" required>
-                      <label for="password">Your Password</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-outline-light w-100 py-3" type="submit">Login Now</button>
-                  </div>
-                  <a @click='togglelog(), clearuname()' v-if="!changed" class="dark">Log in with your email instead?</a>
-                  <a @click='togglelog(), clearemail()' v-if="changed" class="dark">Log in with your username instead?</a>
-                  <router-link to="/Password_Recovery" tag="a" class="dark">Forgot Password?</router-link>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 <script>
 import router from '@/router';
