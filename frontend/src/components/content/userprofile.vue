@@ -136,7 +136,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12" id="color">
-                                                    <div v-if="!info.birthdate" class="form-floating">
+                                                    <div v-if="info.once" class="form-floating">
                                                         <input type="date" minlength="8" class="form-control bg-transparent" id="birthdate" placeholder="Birthdate" required>
                                                         <label for="birthdate">Birthdate</label>
                                                     </div>
@@ -207,7 +207,7 @@
                                         <button class="btn btn-outline-light w-50 py-3" type="submit" >Update Info</button>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-outline-light w-50 py-3">Go Back</button>
+                                        <button class="btn btn-outline-light w-50 py-3" @click="showform()" >Go Back</button>
                                     </div>
                                 </div>
                             </form>
@@ -248,6 +248,7 @@ export default{
                 if(tour_info.data.msg === 'okay') {
                     this.info = tour_info.data;
                 }
+
 
             } catch (error) {
                 console.log(error);
