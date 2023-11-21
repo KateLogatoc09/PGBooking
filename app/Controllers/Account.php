@@ -146,6 +146,7 @@ class Account extends ResourceController
                 'birthdate' => $check['birthdate'],
                 'gender' => $check['gender'],
                 'photo' => $check['photo'],
+                'once' => false,
                 'msg' => 'okay', 
             ];
             return $this->respond($info, 200); 
@@ -161,6 +162,7 @@ class Account extends ResourceController
                 'birthdate' => 'your birthdate',
                 'gender' => 'your gender',
                 'photo' => '/default.jpg', 
+                'once' => true, 
                 'msg' => 'okay', 
             ];
             return $this->respond($info, 200);
@@ -270,9 +272,9 @@ class Account extends ResourceController
             if ($checkdupliemail) {
                 return $this->respond(['msg' => 'duplicate email.'], 200);
             } else if($checkdupliphone) {
-                return $this->respond(['msg' => 'duplicate phone'], 200);
+                return $this->respond(['msg' => 'duplicate phone.'], 200);
             } else if($checkdupliuname) {
-                return $this->respond(['msg' => 'duplicate username'], 200);
+                return $this->respond(['msg' => 'duplicate username.'], 200);
             } else {
 
                 $file = $this->request->getFile('photo');
