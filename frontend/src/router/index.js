@@ -12,6 +12,7 @@ import Admin from '../views/Admin.vue'
 import Tourist from '../views/Tourist.vue'
 import HotelAcc from '../views/HotelAcc.vue'
 import Verify from '../views/Verify.vue'
+import Forms from '../views/Forms.vue'
 
 const routes = [
   {
@@ -27,6 +28,11 @@ const routes = [
     path: '/Admin',
     name: Admin,
     component: Admin
+  },
+  {
+    path: '/form',
+    name: Forms,
+    component: Forms
   },
 
   {
