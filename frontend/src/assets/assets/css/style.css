@@ -704,3 +704,16 @@
 .pad{
     padding-top: 10px !important;
 }
+
+.high{
+    margin-top: -50px !important;
+}
+
+.over{
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.back4{
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(@/assets/assets/images/b4.jpg);
+}

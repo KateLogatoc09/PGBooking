@@ -543,7 +543,7 @@
                             <div class="card-header">
                                 <h3>Room Bookings</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body over">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -580,7 +580,7 @@
                             <div class="card-header">
                                 <h3>List of Rooms</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body over">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -617,7 +617,7 @@
                             <div class="card-header">
                                 <h3>List of Amenities</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body over">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>

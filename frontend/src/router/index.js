@@ -13,6 +13,7 @@ import Tourist from '../views/Tourist.vue'
 import HotelAcc from '../views/HotelAcc.vue'
 import Verify from '../views/Verify.vue'
 import Forms from '../views/Forms.vue'
+import Tables from '../views/Tables.vue'
 
 const routes = [
   {
@@ -29,10 +30,17 @@ const routes = [
     name: Admin,
     component: Admin
   },
+
   {
     path: '/form',
     name: Forms,
     component: Forms
+  },
+
+  {
+    path: '/table',
+    name: Tables,
+    component: Tables
   },
 
   {
