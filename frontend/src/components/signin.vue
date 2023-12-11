@@ -74,10 +74,15 @@ export default{
                 }); 
 
                 if(log_tour.data.msg ==='okay'){ 
-                    sessionStorage.setItem("jwt", log_tour.data.token) 
+                    sessionStorage.setItem("jwt", log_tour.data.token);
+                    //sessionStorage.setItem("status", log_tour.data.status);
+                    //sessionStorage.setItem("role", "tourist");
                     router.push('/tourist_account'); 
                 } else if (log_tour.data.msg ==='wrong password.') {
                     alert(log_tour.data.msg);
+                } else if (log_tour.data.msg === 'Please verify your email before logging in.') {
+                    alert(log_tour.data.msg);
+                    router.push('/verify');
                 } else {
                     alert(log_tour.data.msg);
                 }

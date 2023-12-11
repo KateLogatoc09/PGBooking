@@ -11,6 +11,7 @@ import Login from '../views/Login.vue'
 import Admin from '../views/Admin.vue'
 import Tourist from '../views/Tourist.vue'
 import HotelAcc from '../views/HotelAcc.vue'
+import Verify from '../views/Verify.vue'
 
 const routes = [
   {
@@ -65,6 +66,12 @@ const routes = [
   },
 
   {
+    path: '/verify',
+    name: Verify,
+    component: Verify
+  },
+
+  {
     path: '/register',
     name: Register,
     component: Register,
@@ -93,8 +100,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const isLoggedin = checkUserLogin();
+  //const eligibility = checkUserAccess();
   if (to.matched.some((record) => record.meta.requiresAuth)) {
-    if(!isLoggedin) {
+    if(!isLoggedin ) {
       next("/login");
     } else {
       next();
@@ -108,6 +116,12 @@ function checkUserLogin() {
   const userToken = sessionStorage.getItem('jwt');
   return !!userToken;
 }
+
+/*function checkUserAccess() {
+  const userToken = sessionStorage.getItem('jwt');
+  return !!userToken;
+} */
+
 
 
 export default router

@@ -83,6 +83,9 @@
             <div v-else-if="Registerhotel()">
             </div>
 
+            <div v-else-if="Verify()">
+            </div>
+            
             <div v-else class="container-fluid bg-primary py-5 mb-5 hero-header cover">
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
@@ -229,6 +232,13 @@ export default {
       },
       Account() {
         if(this.$route.path == "/tourist_account") {
+          return true
+        } else {
+          return false
+        }
+      },
+      Verify() {
+        if(this.$route.path == "/verify") {
           return true
         } else {
           return false

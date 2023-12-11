@@ -284,11 +284,11 @@ export default{
                     this.showform();
                     alert('New profile information was changed successfully');
                 } else if(tour_info_save.data.msg === 'duplicate email.') {
-                    alert('Email not available. Please change your chosen email.');
+                    alert('Email is not available. Please change your chosen email.');
                 } else if(tour_info_save.data.msg === 'duplicate username.') {
-                    alert('Username not available. Please change your chosen username.');
+                    alert('Username is not available. Please change your chosen username.');
                 } else if(tour_info_save.data.msg === 'duplicate phone.') {
-                    alert('Phone number not available. Please change your chosen phone number.');
+                    alert('Phone number is not available. Please change your chosen phone number.');
                 } else {
                     alert(tour_info_save.data.msg);
                 }
