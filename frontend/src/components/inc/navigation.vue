@@ -22,7 +22,7 @@
                         <router-link to="/about" tag="a" class="nav-item nav-link" exact>About</router-link>
                         <router-link to="/services" tag="a" class="nav-item nav-link" exact>Services</router-link>
                         <router-link to="/hotels" tag="a" class="nav-item nav-link" exact>Hotels</router-link>
-                        <router-link to="/Adminn" tag="a" class="nav-item nav-link" exact>Admin</router-link>
+                        <router-link to="/Admin" tag="a" class="nav-item nav-link" exact>Admin</router-link>
                         <router-link to="/contact" tag="a" class="nav-item nav-link" exact>Contact</router-link>
                         <router-link v-if="isLoggedin()" to="/tourist_account" tag="a" class="nav-item nav-link" exact>Account</router-link>
                         <a v-if="isLoggedin()" @click="Logout()" class="nav-item nav-link pointer">Logout</a>
@@ -42,7 +42,7 @@
                     <router-link to="/about" tag="li" class="link" exact>About</router-link><hr>
                     <router-link to="/services" tag="li" class="link" exact>Services</router-link><hr>
                     <router-link to="/hotels" tag="li" class="link" exact>Hotels</router-link><hr>
-                    <router-link to="/Adminn" tag="li" class="link" exact>Admin</router-link><hr>
+                    <router-link to="/Admin" tag="li" class="link" exact>Admin</router-link><hr>
                     <router-link to="/contact" tag="li" class="link" exact>Contact</router-link><hr>
                     <!--v-if login session-->
                     <router-link v-if="!isLoggedin()" to="/login" tag="li" class="link" exact>Login</router-link><hr v-if="!isLoggedin()">
@@ -83,6 +83,9 @@
             <div v-else-if="Registerhotel()">
             </div>
 
+            <div v-else-if="Verify()">
+            </div>
+            
             <div v-else class="container-fluid bg-primary py-5 mb-5 hero-header cover">
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
@@ -229,6 +232,13 @@ export default {
       },
       Account() {
         if(this.$route.path == "/tourist_account") {
+          return true
+        } else {
+          return false
+        }
+      },
+      Verify() {
+        if(this.$route.path == "/verify") {
           return true
         } else {
           return false

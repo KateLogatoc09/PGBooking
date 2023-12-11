@@ -136,7 +136,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12" id="color">
-                                                    <div v-if="!info.birthdate" class="form-floating">
+                                                    <div v-if="info.once" class="form-floating">
                                                         <input type="date" minlength="8" class="form-control bg-transparent" id="birthdate" placeholder="Birthdate" required>
                                                         <label for="birthdate">Birthdate</label>
                                                     </div>
@@ -207,7 +207,7 @@
                                         <button class="btn btn-outline-light w-50 py-3" type="submit" >Update Info</button>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-outline-light w-50 py-3">Go Back</button>
+                                        <button class="btn btn-outline-light w-50 py-3" @click="showform()" >Go Back</button>
                                     </div>
                                 </div>
                             </form>
@@ -249,6 +249,7 @@ export default{
                     this.info = tour_info.data;
                 }
 
+
             } catch (error) {
                 console.log(error);
             }
@@ -283,11 +284,11 @@ export default{
                     this.showform();
                     alert('New profile information was changed successfully');
                 } else if(tour_info_save.data.msg === 'duplicate email.') {
-                    alert('Email not available. Please change your chosen email.');
+                    alert('Email is not available. Please change your chosen email.');
                 } else if(tour_info_save.data.msg === 'duplicate username.') {
-                    alert('Username not available. Please change your chosen username.');
+                    alert('Username is not available. Please change your chosen username.');
                 } else if(tour_info_save.data.msg === 'duplicate phone.') {
-                    alert('Phone number not available. Please change your chosen phone number.');
+                    alert('Phone number is not available. Please change your chosen phone number.');
                 } else {
                     alert(tour_info_save.data.msg);
                 }
