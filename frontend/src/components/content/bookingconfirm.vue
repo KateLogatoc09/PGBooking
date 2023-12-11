@@ -33,7 +33,7 @@
 
                                 <div class="col-md-12" id="color">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="instructions" placeholder="Specisl Instructions" required>
+                                        <input type="text" class="form-control bg-transparent" id="instructions" placeholder="Special Instructions" required>
                                         <label for="instructions">Special Instructions</label>
                                     </div>
                                 </div>
