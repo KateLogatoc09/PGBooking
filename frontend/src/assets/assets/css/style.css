@@ -645,7 +645,7 @@
 }
 
 .page-header {
-    background: url(@/assets/assets/images/booking.jpg);
+    background: url(@/assets/assets/images/cover.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

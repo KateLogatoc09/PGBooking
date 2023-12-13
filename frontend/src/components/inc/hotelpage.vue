@@ -4,7 +4,7 @@
             <div class="container py-5">
                 <div class="row justify-content-left py-5">
                     <div class="col-lg-5 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 texty animated slideInDown">Hotel Name</h1>
+                        <h1 class="display-3 texty animated slideInDown">Filipiniana</h1>
                         <h3 class="texty2 animated slideInDown">Daisy Street Tawiran, Calapan City</h3>
                         <div class="mb-3">
                                 <small class="fa fa-star star"></small>
