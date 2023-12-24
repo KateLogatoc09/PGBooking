@@ -4,7 +4,7 @@
         <div class="container">
             <div>
                 <h1 class="text-white mb-4 text-center" id="classy">Register Account</h1>
-                <form @submit.prevent="reg_tourist">
+                <form @submit.prevent="reg">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-6 text-white" id="classy2">
                         <div class="row g-3">
@@ -52,6 +52,15 @@
                                 </div>
                             </div>
                     </div>
+                    <div class="col-12" id="color">
+                        <div class="form-floating">
+                            <select id="role" class="form-control bg-transparent" placeholder="Are you?" v-model="role" required>
+                                <option value="TOURIST">Tourist</option>
+                                <option value="HOTEL">Hotel</option>
+                            </select>
+                        <label for="role">Type of User</label>
+                    </div>
+                    </div>
                     <div class="col-12">
                         <button class="btn btn-outline-light w-50 py-3" type="submit">Register Now</button>
                     </div>
@@ -67,6 +76,7 @@
 <script>
 import router from '@/router';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 export default{
     data(){
         return{
@@ -76,34 +86,56 @@ export default{
             c_password:"",
             phone:"",
             address:"",
+            role:"",
         }
     },
     created(){
         
     },
     methods:{
-        async reg_tourist(){
+        async reg(){
             try {
-                const reg_tour = await axios.post("Register", {
+                const regis = await axios.post("Register", {
                     username: this.username,
                     email: this.email,
                     password:this.password,
                     phone:this.phone,
                     address:this.address,
+                    role:this.role,
                 
                 });
 
-                if(reg_tour.data.msg === 'Registered Successfully') {
-                    alert(reg_tour.data.msg); 
+                if(regis.data.msg === 'Registered Successfully') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: regis.data.msg,
+                        icon: 'info',
+                    })
                     router.push('/login');
-                } else if (reg_tour.data.msg === 'A user exists with that email. Please change your email.') {
-                    alert(reg_tour.data.msg);
-                } else if (reg_tour.data.msg === 'A user exists with that username. Please change your username.') {
-                    alert(reg_tour.data.msg); 
-                } else if (reg_tour.data.msg === 'A user exists with that phone number. Please change your phone number.') {
-                    alert(reg_tour.data.msg); 
+                } else if (regis.data.msg === 'A user exists with that email. Please change your email.') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: regis.data.msg,
+                        icon: 'info',
+                    })
+                } else if (regis.data.msg === 'A user exists with that username. Please change your username.') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: regis.data.msg,
+                        icon: 'info',
+                    }) 
+                } else if (regis.data.msg === 'A user exists with that phone number. Please change your phone number.') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: regis.data.msg,
+                        icon: 'info',
+                    })
                 } else {
-                    alert(reg_tour.data.msg);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: regis.data.msg,
+                        icon: 'error',
+                    })
                 }
 
             } catch (error) {

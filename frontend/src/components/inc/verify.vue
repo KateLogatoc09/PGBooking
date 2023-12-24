@@ -57,17 +57,20 @@
 
 <script>
 import router from '@/router';
-import axios from 'axios';
+import axios from 'axios';  
+import Swal from 'sweetalert2';
 export default{
     data(){
         return{
             sent:false,
+            em: true,
+            co: false,
             code:"",
             email:"",
         }
     },
     created(){
-        
+        this.ifset();
     },
     methods:{
         ifset() {
@@ -90,7 +93,11 @@ export default{
                     sessionStorage.setItem("code", send.data.verification);
                     this.ifset();
                 } else {
-                    alert(send.data.msg);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: send.data.msg,
+                        icon: 'error',
+                    })
                 }
             } catch (error) {
                 console.log(error);
@@ -106,16 +113,28 @@ export default{
                 }); 
 
                 if(verify_acc.data.msg ==='okay'){
-                    alert("Your email has been verified successfully.");
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: "Your email has been verified successfully.",
+                        icon: 'info',
+                    })
                     sessionStorage.clear(); 
                     router.push('/login');
-                } else if (verify_acc.data.msg === 'hotel' || verify_acc.data.msg === 'tourist') {
-                    alert('Your account has already been verified.');
+                } else if (verify_acc.data.msg === 'acc') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: "Your account has already been verified.",
+                        icon: 'info',
+                    })
                     sessionStorage.clear();
                     router.push('/login');
                 }
                 else {
-                    alert(verify_acc.data.msg);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: verify_acc.data.msg,
+                        icon: 'error',
+                    })
                 }
             } catch (error) {
                 console.log(error);
@@ -132,13 +151,25 @@ export default{
                     sessionStorage.clear(); 
                     sessionStorage.setItem('email', resending.data.email);
                     sessionStorage.setItem('code', resending.data.code);
-                    alert("The code has been sent successfully.");
-                } else if (resending.data.msg === 'hotel' || resending.data.msg === 'tourist') {
-                    alert('Your account has already been verified.');
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: "New code has been sent successfully.",
+                        icon: 'info',
+                    })
+                } else if (resending.data.msg === 'acc') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: "Your account has already been verified.",
+                        icon: 'info',
+                    })
                     sessionStorage.clear();
                     router.push('/login');
                 } else {
-                    alert(resending.data.msg);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: resending.data.msg,
+                        icon: 'error',
+                    })
                 }
             } catch (error) {
                 console.log(error);

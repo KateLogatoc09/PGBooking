@@ -22,9 +22,8 @@
                         <router-link to="/about" tag="a" class="nav-item nav-link" exact>About</router-link>
                         <router-link to="/services" tag="a" class="nav-item nav-link" exact>Services</router-link>
                         <router-link to="/hotels" tag="a" class="nav-item nav-link" exact>Hotels</router-link>
-                        <router-link to="/Admin" tag="a" class="nav-item nav-link" exact>Admin</router-link>
                         <router-link to="/contact" tag="a" class="nav-item nav-link" exact>Contact</router-link>
-                        <router-link v-if="isLoggedin()" to="/tourist_account" tag="a" class="nav-item nav-link" exact>Account</router-link>
+                        <router-link v-if="isLoggedin() && isHT()" to="/account" tag="a" class="nav-item nav-link" exact>Account</router-link>
                         <a v-if="isLoggedin()" @click="Logout()" class="nav-item nav-link pointer">Logout</a>
                     </div>
                     <div class="d-flex justify-content-center mb-2">
@@ -42,12 +41,11 @@
                     <router-link to="/about" tag="li" class="link" exact>About</router-link><hr>
                     <router-link to="/services" tag="li" class="link" exact>Services</router-link><hr>
                     <router-link to="/hotels" tag="li" class="link" exact>Hotels</router-link><hr>
-                    <router-link to="/Admin" tag="li" class="link" exact>Admin</router-link><hr>
                     <router-link to="/contact" tag="li" class="link" exact>Contact</router-link><hr>
                     <!--v-if login session-->
                     <router-link v-if="!isLoggedin()" to="/login" tag="li" class="link" exact>Login</router-link><hr v-if="!isLoggedin()">
                     <router-link v-if="!isLoggedin()" to="/register" tag="li" class="link" exact>Register</router-link><hr v-if="!isLoggedin()"> 
-                    <router-link v-if="isLoggedin()" to="/tourist_account" tag="li" class="link" exact>Account</router-link><hr v-if="isLoggedin()">
+                    <router-link v-if="isLoggedin() && isHT()" to="/account" tag="li" class="link" exact>Account</router-link><hr v-if="isLoggedin() && isHT()">
                     <li v-if="isLoggedin()" @click="Logout()" class="link pointer">Logout</li><hr>
                   </ul>
                   </center>
@@ -85,6 +83,9 @@
 
             <div v-else-if="Verify()">
             </div>
+
+            <div v-else-if="Forgot()">
+            </div>
             
             <div v-else class="container-fluid bg-primary py-5 mb-5 hero-header cover">
                 <div class="container py-5">
@@ -103,7 +104,7 @@
                                     <router-link v-if="Services()" to="/Services" tag="li" class="breadcrumb-item text-white" exact>Services</router-link>
                                     <router-link v-if="Hotels()" to="/Hotels" tag="li" class="breadcrumb-item text-white" exact>Hotels & Resorts</router-link>
                                     <router-link v-if="Contact()" to="/Contact" tag="li" class="breadcrumb-item text-white" exact>Contact</router-link>
-                                    <router-link v-if="Account()" to="/tourist_account" tag="li" class="breadcrumb-item text-white" exact>Account</router-link>
+                                    <router-link v-if="Account()" to="/account" tag="li" class="breadcrumb-item text-white" exact>Account</router-link>
                                 </ol>
                             </nav>
                         </div>
@@ -130,11 +131,20 @@ export default {
     },
     created(){
       this.isLoggedin();
+      this.isHT();
       },
     methods: {
       isLoggedin() {
         const user = sessionStorage.getItem('jwt');
         if(user != null) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      isHT() {
+        const role = sessionStorage.getItem('role');
+        if(role !== 'ADMIN') {
           return true;
         } else {
           return false;
@@ -231,7 +241,7 @@ export default {
         }
       },
       Account() {
-        if(this.$route.path == "/tourist_account") {
+        if(this.$route.path == "/account") {
           return true
         } else {
           return false
@@ -239,6 +249,13 @@ export default {
       },
       Verify() {
         if(this.$route.path == "/verify") {
+          return true
+        } else {
+          return false
+        }
+      },
+      Forgot() {
+        if(this.$route.path == "/forgot") {
           return true
         } else {
           return false

@@ -102,6 +102,7 @@
                         </div>
                     </div>
                     <button @click="showform()" class="btn main-btn py-3 px-5 mt-2 buttoncolor">Edit Details</button>
+                    <button v-if="role_check() && stat_check()" @click="hotelacc()" class="btn main-btn py-3 px-5 mt-2 buttoncolor">Edit Details</button>
                 </div>
             </div>
             
@@ -224,6 +225,7 @@
 
 </template>
 <script>
+import router from '@/router';
 import axios from 'axios'
 export default{
     data(){
@@ -236,17 +238,38 @@ export default{
         }
     },
     created(){
-        this.tourist_info()
+        this.account_info();
+        this.role_check();
+        this.stat_check();
     },
     methods:{
-        async tourist_info(){
+        role_check() {
+        const role = sessionStorage.getItem('role');
+          if(role == 'HOTEL')
+            return true;
+          else {
+            return false;
+          }
+      },
+      stat_check() {
+        const stat = sessionStorage.getItem('status');
+          if(stat == 'VERIFIED')
+            return true;
+          else {
+            return false;
+          }
+      },
+        hotelacc() {
+        router.push('/hotelacc');
+        },
+        async account_info(){
             try {
-                const tour_info = await axios.post("Tourist_Info", {
+                const acc_info = await axios.post("Account_Info", {
                     token: sessionStorage.getItem('jwt'),
                 });
 
-                if(tour_info.data.msg === 'okay') {
-                    this.info = tour_info.data;
+                if(acc_info.data.msg === 'okay') {
+                    this.info = acc_info.data;
                 }
 
 
@@ -277,20 +300,20 @@ export default{
             data.append('gender', document.getElementById('gender').value);
 
             try {
-                const tour_info_save = await axios.post("Tourist_Info_Edit", data, config);
+                const acc_info_save = await axios.post("Account_Info_Edit", data, config);
 
-                if(tour_info_save.data.msg === 'okay') {
-                    this.tourist_info();
+                if(acc_info_save.data.msg === 'okay') {
+                    this.account_info();
                     this.showform();
                     alert('New profile information was changed successfully');
-                } else if(tour_info_save.data.msg === 'duplicate email.') {
+                } else if(acc_info_save.data.msg === 'duplicate email.') {
                     alert('Email is not available. Please change your chosen email.');
-                } else if(tour_info_save.data.msg === 'duplicate username.') {
+                } else if(acc_info_save.data.msg === 'duplicate username.') {
                     alert('Username is not available. Please change your chosen username.');
-                } else if(tour_info_save.data.msg === 'duplicate phone.') {
+                } else if(acc_info_save.data.msg === 'duplicate phone.') {
                     alert('Phone number is not available. Please change your chosen phone number.');
                 } else {
-                    alert(tour_info_save.data.msg);
+                    alert(acc_info_save.data.msg);
                 }
 
             } catch (error) {

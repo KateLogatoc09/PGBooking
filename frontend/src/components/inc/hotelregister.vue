@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="role_check && !stat_check">
         <div class="back2 marg3">
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -123,7 +123,27 @@
 import router from '@/router';
 import axios from 'axios';
 export default{
+    created(){
+        this.role_check();
+        this.stat_check();
+    },
     methods:{
+        role_check() {
+        const role = sessionStorage.getItem('role');
+          if(role == 'HOTEL')
+            return true;
+          else {
+            return false;
+          }
+      },
+      stat_check() {
+        const stat = sessionStorage.getItem('status');
+          if(stat == 'VERIFIED')
+            return true;
+          else {
+            return false;
+          }
+      },
         async registerhotel() {
             const config = { 
                 headers: {
@@ -155,13 +175,10 @@ export default{
             data.append('mayors_permit', mayor);
 
             try {
-                const reg_hotel = await axios.post("Register_Hotel", data, config);
+                const reg_hotel = await axios.post("Hotel_Verify", data, config);
 
                 if(reg_hotel.data.msg === 'okay') {
-                    alert('You must verify your email first, before login.');
-                    sessionStorage.setItem("code", reg_hotel.data.verification); 
-                    sessionStorage.setItem("email", reg_hotel.data.email); 
-                    router.push('/verify');
+                    alert('Wait to be verified by the admin.');
                 } else {
                     alert(reg_hotel.data.msg);
                 }

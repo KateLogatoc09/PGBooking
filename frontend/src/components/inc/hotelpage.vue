@@ -1,4 +1,5 @@
 <template>
+    <div v-if="role_check()"> <!--v-if="stat_check() && role_check()"-->
     <div>
         <div class="container-fluid bg-primary py-5 mb-5 page-header">
             <div class="container py-5">
@@ -340,74 +341,6 @@
     </div>
     <!-- Edit Hotel End -->
 
-    <!-- Add Room Start -->
-    <div class="back3 marg3">
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div>
-                <div class="row g-5 align-items-center">
-                <h1 class="text-white mb-4 text-center" id="classy">Add/Edit Room</h1>
-                <form>
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6 text-white" id="classy2">
-                        <div class="row g-3">
-                            <div class="col-md-12" id="color">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="rname" placeholder="Room Name" required>
-                                        <label for="rname">Room Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12" id="color">
-                                    <div class="form-floating">
-                                        <input type="number" class="form-control bg-transparent" id="rnumber" placeholder="Room Number" required>
-                                        <label for="rnumber">Room Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12" id="color">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="rdesc" placeholder="Room Description" required>
-                                        <label for="rdesc">Room Description</label>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    <div class="col-md-6" id="classy2">
-                            <div class="row g-3">
-                                <div class="col-md-12" id="color">
-                                    <div class="form-floating">
-                                        <input type="number" class="form-control bg-transparent" id="rprice" placeholder="Room Price" required>
-                                        <label for="rprice">Room Price</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12" id="color">
-                                    <div class="form-floating">
-                                        <input type="file" accept=".jpg,.png,.jpeg," class="form-control bg-transparent" id="rimage" placeholder="Room Image" required>
-                                        <label for="rimage">Upload a photo of the room</label>
-                                    </div>
-                                </div>   
-                                <div class="col-md-12" id="color">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="rstatus" placeholder="Room Status" required>
-                                        <label for="rstatus">Room Status</label>
-                                    </div>
-                                </div>                  
-                            </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-outline-light w-50 py-3" type="submit">Save Room</button>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-outline-light w-50 py-3" type="submit">Go Back</button>
-                    </div>
-                </div>
-            </form>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <!-- Add Room End -->
-
         <!-- Add Amenities Start -->
         <div class="back3 marg3">
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -449,7 +382,7 @@
                                 </div>   
                                 <div class="col-md-12" id="color">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="rstatus" placeholder="Amenity Status" required>
+                                        <input type="text" class="form-control bg-transparent" id="rostatus" placeholder="Amenity Status" required>
                                         <label for="rstatus">Amenity Status</label>
                                     </div>
                                 </div>                  
@@ -604,7 +537,10 @@
                                                 <td>Photo</td>
                                                 <td>Status</td>
                                                 <td>
+                                                <form @submit.prevent="select">
+                                                <input type="hidden" id="rid">
                                                 <a href="#" class='btn btn-primary'>Update</a><br><br>
+                                                </form>
                                                 <a href="#" class='btn btn-danger'>Delete</a>
                                                 </td>
                                             </tr>
@@ -652,7 +588,171 @@
             </div>
         </div>
     </div>
+    </div>
+
+    <!-- Add Room Start -->
+    <div class="back3" v-if="role_check()">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div>
+                <div class="row g-5 align-items-center">
+                <h1 class="text-white mb-4 text-center" id="classy">Add/Edit Room</h1>
+                <form @submit.prevent="room()">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white" id="classy2">
+                        <div class="row g-3">
+                            <input type="hidden" id="rid" :value="selected.id" required/>
+                            <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="rname" placeholder="Room Name" :value="selected.name" required>
+                                        <label for="rname">Room Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control bg-transparent" id="rnumber" placeholder="Room Number" :value="selected.number" required>
+                                        <label for="rnumber">Room Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="rdesc" placeholder="Room Description" :value="selected.description" required>
+                                        <label for="rdesc">Room Description</label>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    <div class="col-md-6" id="classy2">
+                            <div class="row g-3">
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control bg-transparent" id="rprice" placeholder="Room Price" :value="selected.price" required>
+                                        <label for="rprice">Room Price</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="file" accept=".jpg,.png,.jpeg," class="form-control bg-transparent" id="rimage" placeholder="Room Image">
+                                        <label for="rimage">Upload a photo of the room</label>
+                                    </div>
+                                </div>   
+                                <div class="col-md-12" id="color">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="rstatus" placeholder="Room Status" :value="selected.status" required>
+                                        <label for="rstatus">Room Status</label>
+                                    </div>
+                                </div>                  
+                            </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-light w-50 py-3" type="submit">Save Room</button>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-light w-50 py-3" type="submit">Go Back</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Add Room End -->
 
     <!-- Bookings End -->
 
 </template>
+
+<script>
+import router from '@/router';
+import axios from 'axios'
+export default{
+    data(){
+        return{
+            url: "http://backend.test",
+            selected:[],
+            show: false,
+            prevurl: null,
+            rid: "",
+        }
+    },
+    created(){
+        this.role_check();
+        this.stat_check();
+    },
+    methods:{
+        role_check() {
+        const role = sessionStorage.getItem('role');
+          if(role == 'HOTEL')
+            return true;
+          else {
+            return false;
+          }
+      },
+      stat_check() {
+        const stat = sessionStorage.getItem('status');
+          if(stat == 'VERIFIED')
+            return true;
+          else {
+            return false;
+          }
+      },
+      async select(){
+            try {
+                const selroom = await axios.post("Room", {
+                    token: sessionStorage.getItem('jwt'),
+                    rid: this.rid,
+                });
+
+                if(selroom.data.msg === 'okay') {
+                    this.selected = selroom.data;
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        },
+        async room() {
+            const config = { 
+                headers: {
+                    'content-type':'multipart/form-data'
+                }
+            };
+
+            const photo = document.getElementById('rimage').files[0];
+
+            let data = new FormData();
+            data.append('image', photo);
+            data.append('token', sessionStorage.getItem('jwt'));
+            data.append('id', document.getElementById('rid').value);
+            data.append('name', document.getElementById('rname').value);
+            data.append('number', document.getElementById('rnumber').value);
+            data.append('desc', document.getElementById('rdesc').value);
+            data.append('price', document.getElementById('rprice').value);
+            data.append('status', document.getElementById('rstatus').value);
+
+            try {
+                const acc_info_save = await axios.post("Room_Edit", data, config);
+
+                if(acc_info_save.data.msg === 'okay') {
+                    this.rooms();
+                    alert('Add/Edit Room successfully');
+                } else {
+                    alert(acc_info_save.data.msg);
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        },
+        showform() {
+            if(this.show){
+                this.show = false;
+                return this.show;
+            }else{
+                this.show = true;
+            return this.show;
+            }
+        },
+    }
+}
+</script>

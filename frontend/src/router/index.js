@@ -9,9 +9,10 @@ import Registerhotel from '../views/Registerhotel.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Admin from '../views/Admin.vue'
-import Tourist from '../views/Tourist.vue'
+import Account from '../views/Account.vue'
 import HotelAcc from '../views/HotelAcc.vue'
 import Verify from '../views/Verify.vue'
+import Forgot from '../views/Forgot.vue'
 import Forms from '../views/Forms.vue'
 import Tables from '../views/Tables.vue'
 
@@ -26,9 +27,10 @@ const routes = [
     component: Homepage
   },
   {
-    path: '/Admin',
+    path: '/admin',
     name: Admin,
-    component: Admin
+    component: Admin,
+    meta: {requiresAuth: true},
   },
 
   {
@@ -70,7 +72,8 @@ const routes = [
   {
     path: '/hotelacc',
     name: HotelAcc,
-    component: HotelAcc
+    component: HotelAcc,
+    meta: {requiresAuth: true},
   },
 
   {
@@ -86,22 +89,26 @@ const routes = [
   },
 
   {
+    path: '/forgot',
+    name: Forgot,
+    component: Forgot,
+  },
+
+  {
     path: '/register',
     name: Register,
     component: Register,
-    meta: {requiresAuth: false}
   },
 
   {
     path: '/login',
     name: Login,
     component: Login,
-    meta: {requiresAuth: false}
   },
   
   {
-    path: '/tourist_account',
-    component: Tourist,
+    path: '/account',
+    component: Account,
     meta: {requiresAuth: true}
   },
 ]
@@ -114,12 +121,19 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const isLoggedin = checkUserLogin();
+  const TypeofUser = checkUserRole();
   //const eligibility = checkUserAccess();
   if (to.matched.some((record) => record.meta.requiresAuth)) {
     if(!isLoggedin ) {
       next("/login");
     } else {
-      next();
+      if((TypeofUser === 'ADMIN' && to.path === "/account") || (TypeofUser === 'ADMIN' && to.path === "/hotelacc")) {
+        next("/");
+      } else if(((TypeofUser === 'HOTEL' || TypeofUser === 'TOURIST') && to.path === "/admin") || ((TypeofUser === 'HOTEL' || TypeofUser === 'TOURIST') && to.path === "/form")){
+        next("/");
+      } else{
+        next();
+      }
     }
   } else {
     next();
@@ -131,10 +145,10 @@ function checkUserLogin() {
   return !!userToken;
 }
 
-/*function checkUserAccess() {
-  const userToken = sessionStorage.getItem('jwt');
-  return !!userToken;
-} */
+function checkUserRole() {
+  const role = sessionStorage.getItem('role');
+  return role;
+}
 
 
 

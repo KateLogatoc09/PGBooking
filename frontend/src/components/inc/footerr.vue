@@ -42,12 +42,14 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
+                <form @submit.prevent="newsletter">
                     <h4 class="text-white mb-3">Newsletter</h4>
                     <p>Subcribe to receive the latest updates about offers and promos</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-4 ps-4 pe-5" type="text" id="classy2" placeholder="Your email">
-                        <button type="button" class="btn main-btn py-2 position-absolute top-0 end-0 mt-1 me-1">SignUp</button>
+                        <input class="form-control border-primary w-100 py-4 ps-4 pe-5" type="email" id="classy2" placeholder="Your email" v-model="email" required>
+                        <button type="submit" class="btn main-btn py-2 position-absolute top-0 end-0 mt-1 me-1">SignUp</button>
                     </div>
+                </form>
                 </div>
             </div>
         </div>
@@ -76,3 +78,39 @@
 
     </div>
 </template>
+
+<script>
+import router from '@/router';
+import axios from 'axios';
+export default{
+    data(){
+        return{
+            email:"",
+        }
+    },
+    created(){
+        
+    },
+    methods:{
+        async newsletter(){
+            try {
+                const news = await axios.post("Newsletter", {
+                    email: this.email,
+                
+                });
+
+                if(news.data.msg === 'okay') {
+                    alert('Subscribed successfully.'); 
+                    router.push('/');
+                } else {
+                    alert(news.data.msg);
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        },
+
+    }
+}
+</script>

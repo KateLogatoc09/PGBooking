@@ -49,29 +49,29 @@
                 </div>
 
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form @submit.prevent="query">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" v-model="name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" v-model="email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" v-model="subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" v-model="message" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
@@ -90,3 +90,45 @@
 
     </div>
 </template>
+
+<script>
+import router from '@/router';
+import axios from 'axios';
+export default{
+    data(){
+        return{
+            name:"",
+            email:"",
+            subject:"",
+            message:"",
+        }
+    },
+    created(){
+        
+    },
+    methods:{
+        async query(){
+            try {
+                const ask = await axios.post("Query", {
+                    name: this.name,
+                    email: this.email,
+                    subject:this.subject,
+                    message:this.message,
+                
+                });
+
+                if(ask.data.msg === 'okay') {
+                    alert('Message sent successfully.'); 
+                    router.push('/contact');
+                } else {
+                    alert(ask.data.msg);
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        },
+
+    }
+}
+</script>

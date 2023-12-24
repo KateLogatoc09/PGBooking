@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="!role_check()">
     
          <!-- Contact Start -->
     <div class="container-xxl py-5">
@@ -171,8 +171,17 @@ export default{
     },
     created(){
         this.booking_info()
+        this.role_check()
     },
     methods:{
+        role_check() {
+        const role = sessionStorage.getItem('role');
+          if(role == 'HOTEL')
+            return true;
+          else {
+            return false;
+          }
+      },
         async booking_info(){
             try {
                 const book_info = await axios.post("Booking_Info_Past", {

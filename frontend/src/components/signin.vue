@@ -38,7 +38,7 @@
                                 </div>
                                 <a @click='togglelog(), clearuname()' v-if="!changed" class="dark">Log in with your email instead?</a>
                                 <a @click='togglelog(), clearemail()' v-if="changed" class="dark">Log in with your username instead?</a>
-                                <router-link to="/Password_Recovery" tag="a" class="dark">Forgot Password?</router-link>
+                                <router-link to="/forgot" tag="a" class="dark">Forgot Password?</router-link>
                             </div>
                         </form>
                     </div>
@@ -51,6 +51,7 @@
 <script>
 import router from '@/router';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 export default{
     data(){
         return{
@@ -67,24 +68,45 @@ export default{
         async log_tourist(){ 
 
             try {
-                const log_tour = await axios.post("Login",{ 
+                const login = await axios.post("Login",{ 
                 username: this.username,
                 email:this.email,
                 password: this.password 
                 }); 
 
-                if(log_tour.data.msg ==='okay'){ 
-                    sessionStorage.setItem("jwt", log_tour.data.token);
-                    //sessionStorage.setItem("status", log_tour.data.status);
-                    //sessionStorage.setItem("role", "tourist");
-                    router.push('/tourist_account'); 
-                } else if (log_tour.data.msg ==='wrong password.') {
-                    alert(log_tour.data.msg);
-                } else if (log_tour.data.msg === 'Please verify your email before logging in.') {
-                    alert(log_tour.data.msg);
+                if(login.data.msg ==='okay'){ 
+                    sessionStorage.setItem("jwt", login.data.token);
+                    sessionStorage.setItem("status", login.data.status);
+                    sessionStorage.setItem("role", login.data.role);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: 'Login Successfully.',
+                        icon: 'info',
+                    })
+                    if(login.data.role === 'TOURIST' || login.data.role === 'HOTEL'){
+                        router.push('/account'); 
+                    } else{
+                        router.push('/admin');
+                    }
+                } else if (login.data.msg ==='wrong password.') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: login.data.msg,
+                        icon: 'error',
+                    })
+                } else if (login.data.msg === 'Please verify your email before logging in.') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: login.data.msg,
+                        icon: 'info',
+                    })
                     router.push('/verify');
                 } else {
-                    alert(log_tour.data.msg);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: login.data.msg,
+                        icon: 'error',
+                    })
                 }
             } catch (error) {
                 console.log(error);

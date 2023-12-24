@@ -106,10 +106,24 @@
     color:white;
     padding: 0;
   }
+  .menuadmin {
+    font-family: "Inter", sans-serif;
+    width:30%;
+    height: auto;
+    z-index:100;
+    position: fixed;
+    background-color: rgba(128, 0, 128, 0.70);
+    color:white;
+    padding: 0;
+    right: 0;
+    border-radius: 1rem;
+  }
   #links {
     list-style-type:none ;
     padding: 0;
-    padding-top: 3dvh !important;
+  }
+  #links:first-child {
+    padding-top: 1rem !important;
   }
   hr {
     margin: 0;
