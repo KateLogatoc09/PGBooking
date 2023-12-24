@@ -230,7 +230,7 @@ import axios from 'axios'
 export default{
     data(){
         return{
-            url: "http://backend.test",
+            url: "https://pgbooking.online/backend/backend/public/",
             info:[],
             show: false,
             prevurl: null,
