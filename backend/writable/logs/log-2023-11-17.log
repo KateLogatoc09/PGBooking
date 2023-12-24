@@ -1,0 +1,38 @@
+CRITICAL - 2023-11-17 01:54:53 --> Call to a member function move() on null
+in APPPATH\Controllers\Account.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 01:55:34 --> Call to a member function move() on null
+in APPPATH\Controllers\Account.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 02:07:11 --> Call to a member function move() on null
+in APPPATH\Controllers\Account.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 02:07:36 --> Call to a member function move() on null
+in APPPATH\Controllers\Account.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 02:18:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 134.
+ 1 APPPATH\Controllers\Account.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 03:06:34 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(248): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()

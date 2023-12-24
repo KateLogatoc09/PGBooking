@@ -1,0 +1,345 @@
+CRITICAL - 2023-11-18 10:06:01 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(292): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 10:07:03 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-18 10:07:03 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_account`
+WHERE `user_id` != :user_id:
+AND `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 10:07:12 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-18 10:07:12 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_account`
+WHERE `user_id` != :user_id:
+AND `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 10:31:33 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-18 10:31:33 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_account`
+WHERE `user_id` != :user_id:
+AND `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 10:34:24 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-18 10:34:24 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_account`
+WHERE `user_id` != :user_id:
+AND `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 10:34:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 174.
+ 1 APPPATH\Controllers\Account.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 174)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 10:39:08 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Account.php on line 292.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\backend\\app\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 10:41:38 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-18 10:41:38 --> Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_account`
+WHERE `user_id` != :user_id:
+AND `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Account.php(184): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 10:51:11 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 11:14:32 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 11:14:33 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 11:18:22 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 11:43:18 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 11:51:14 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 12:07:17 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 12:08:26 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 12:14:45 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 12:24:57 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 12:29:51 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 12:39:20 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 13:14:15 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 13:22:36 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(295): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 16:39:35 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(358): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 16:41:50 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(358): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 16:46:09 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(358): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 20:05:17 --> Undefined property: App\Controllers\Account::$load
+in APPPATH\Controllers\Account.php on line 200.
+ 1 APPPATH\Controllers\Account.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Account::$load', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 200)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 20:05:50 --> Undefined property: App\Controllers\Account::$load
+in APPPATH\Controllers\Account.php on line 200.
+ 1 APPPATH\Controllers\Account.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Account::$load', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 200)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 20:07:08 --> Undefined property: App\Controllers\Account::$load
+in APPPATH\Controllers\Account.php on line 200.
+ 1 APPPATH\Controllers\Account.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Account::$load', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 200)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 20:18:00 --> Undefined variable $test
+in APPPATH\Controllers\Account.php on line 202.
+ 1 APPPATH\Controllers\Account.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $test', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 202)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 21:11:38 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(350): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 21:21:56 --> Call to undefined method App\Models\BookingInfo::GetAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Account.php(350): CodeIgniter\Model->__call('GetAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 21:27:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 349.
+ 1 APPPATH\Controllers\Account.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 349)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 21:36:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Account.php on line 349.
+ 1 APPPATH\Controllers\Account.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 349)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Past_Booking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 21:38:30 --> Undefined variable $store
+in APPPATH\Controllers\Account.php on line 296.
+ 1 APPPATH\Controllers\Account.php(296): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $store', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 296)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Tourist_Info_Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()

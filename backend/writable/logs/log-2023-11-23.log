@@ -1,0 +1,211 @@
+CRITICAL - 2023-11-23 21:15:00 --> Attempt to read property "username" on null
+in APPPATH\Controllers\Account.php on line 26.
+ 1 APPPATH\Controllers\Account.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\Account.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Account->Register_Tourist()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:15:12 --> Undefined variable $phone
+in APPPATH\Controllers\HotelsResortsAccount.php on line 37.
+ 1 APPPATH\Controllers\HotelsResortsAccount.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $phone', 'C:\\laragon\\www\\backend\\app\\Controllers\\HotelsResortsAccount.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-23 21:16:07 --> mysqli_sql_exception: Unknown column 'phone' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\HotelsResortsAccount.php(37): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-23 21:16:07 --> Unknown column 'phone' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hotels_resorts_account`
+WHERE `phone` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\HotelsResortsAccount.php(37): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-23 21:16:39 --> mysqli_sql_exception: Unknown column 'contact' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\backend\app\Controllers\HotelsResortsAccount.php(38): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-23 21:16:40 --> Unknown column 'contact' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourists_account`
+WHERE `contact` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\HotelsResortsAccount.php(38): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:16:56 --> Call to a member function move() on null
+in APPPATH\Controllers\HotelsResortsAccount.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:18:31 --> Call to a member function setTo() on string
+in APPPATH\Controllers\HotelsResortsAccount.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:25:05 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:27:49 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:30:10 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:32:18 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:32:47 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:32:59 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:36:32 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:37:03 --> Call to a member function move() on null
+in APPPATH\Controllers\HotelsResortsAccount.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:45:51 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:46:46 --> Call to a member function move() on null
+in APPPATH\Controllers\HotelsResortsAccount.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 21:48:11 --> Call to a member function setTo() on string
+in APPPATH\Controllers\HotelsResortsAccount.php on line 96.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 22:43:24 --> Call to undefined method PHPMailer\PHPMailer\PHPMailer::Subject()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 22:48:54 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 22:51:54 --> Call to a member function move() on null
+in APPPATH\Controllers\HotelsResortsAccount.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 22:53:17 --> Call to undefined method App\Controllers\HotelsResortsAccount::respond()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 22:55:12 --> Call to undefined method PHPMailer\PHPMailer\PHPMailer::Subject()
+in APPPATH\Controllers\HotelsResortsAccount.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\HotelsResortsAccount->Register_Hotel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HotelsResortsAccount))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 23:24:15 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('SELECT *
+FROM `hotels_resorts_account`
+WHERE `email` = :email:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `hotels_resorts_account`
+WHERE `email` = :email:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hotels_resorts_account`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Verify.php(73): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Verify->verify()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verify))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 23:26:07 --> Call to undefined method App\Controllers\Verify::respond()
+in APPPATH\Controllers\Verify.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Verify->verify()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verify))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 23:29:34 --> Call to undefined method App\Controllers\Verify::respond()
+in APPPATH\Controllers\Verify.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Verify->verify()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verify))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
