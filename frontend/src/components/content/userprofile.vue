@@ -105,6 +105,121 @@
                     <button v-if="role_check() && stat_check()" @click="hotelacc()" class="btn main-btn py-3 px-5 mt-2 buttoncolor">Edit Details</button>
                 </div>
             </div>
+
+            <div v-if="role_check && !stat_check">
+                <div class="back2 marg3">
+                <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div>
+                        <div class="row g-5 align-items-center">
+                        <h1 class="text-white mb-4 text-center" id="classy">Hotel Legitimacy</h1>
+                        <form @submit.prevent="hotelverify()">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-md-6 text-white" id="classy2">
+                                <div class="row g-3">
+                                    <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control bg-transparent" id="hname" placeholder="hotel/resort name" required>
+                                                <label for="hname">Hotel or Resort Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control bg-transparent" id="owner" placeholder="Owner's Name" required>
+                                                <label for="owner">Owner's full name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control bg-transparent" id="desc" placeholder="Business Description" required>
+                                                <label for="desc">Business Description</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control bg-transparent" id="email" placeholder="Email" required>
+                                                <label for="email">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="password" minlength="8" class="form-control bg-transparent" id="password" placeholder="Password" required>
+                                                <label for="password">Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="password" minlength="8" class="form-control bg-transparent"  id="c_password" @input="check()" placeholder="Confirm Password" required>
+                                                <label for="confirmpassword">Confirm Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12"  id="color">
+                                            <div class="form-floating">
+                                                <input type="tel" maxlength="11" class="form-control bg-transparent" id="number"  @input="phonecheck()" placeholder="Phone Number (09XXXXXXXXX)" required>
+                                                <label for="number">Contact Number</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            <div class="col-md-6" id="classy2">
+                                    <div class="row g-3">
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="insurance" placeholder="Insurance" required>
+                                                <label for="insurance">Upload a scanned copy of Insurance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="assessment" placeholder="Assessment" required>
+                                                <label for="assessment">Upload a scanned copy of Self-Assessment Form</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="application" placeholder="Application" required>
+                                                <label for="application">Upload a scanned copy of Application Form</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="intent" placeholder="Intent" required>
+                                                <label for="intent">Upload a scanned copy of Letter of Intent to Operate</label>
+                                            </div>
+                                        </div>                              
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="discharge" placeholder="Discharge" required>
+                                                <label for="discharge">Upload a scanned copy of Discharge Permit</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="logo" placeholder="Logo" required>
+                                                <label for="logo">Upload logo of business</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="color">
+                                            <div class="form-floating">
+                                                <input type="file" accept=".doc,.docx,.pdf,.jpg,.png,.jpeg," class="form-control bg-transparent" id="mayor" placeholder="Permit" required>
+                                                <label for="permit">Upload a scanned copy of Mayor's Permit</label>
+                                            </div>
+                                        </div>
+                            </div>
+
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-outline-light w-50 py-3" type="submit">Register Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
             
             <div v-if="show" class="back3">
                 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -218,7 +333,6 @@
             </div>
 
 
-
         </div>
     </div>
 </div>
@@ -227,6 +341,7 @@
 <script>
 import router from '@/router';
 import axios from 'axios'
+import Swal from 'sweetalert2';
 export default{
     data(){
         return{
@@ -277,6 +392,57 @@ export default{
                 console.log(error);
             }
         },
+        async hotelverify() {
+            const config = { 
+                headers: {
+                    'content-type':'multipart/form-data'
+                }
+            };
+
+            const insurance = document.getElementById('insurance').files[0];
+            const assessment = document.getElementById('assessment').files[0];
+            const application = document.getElementById('application').files[0];
+            const intent = document.getElementById('intent').files[0];
+            const discharge = document.getElementById('discharge').files[0];
+            const logo = document.getElementById('logo').files[0];
+            const mayor = document.getElementById('mayor').files[0];
+
+            let data = new FormData();
+            data.append('name', document.getElementById('hname').value);
+            data.append('owner', document.getElementById('owner').value);
+            data.append('description', document.getElementById('desc').value);
+            data.append('email', document.getElementById('email').value);
+            data.append('password', document.getElementById('password').value);
+            data.append('contact', document.getElementById('number').value);
+            data.append('insurance', insurance);
+            data.append('assessment', assessment);
+            data.append('application', application);
+            data.append('intent', intent);
+            data.append('discharge', discharge);
+            data.append('logo', logo);
+            data.append('mayors_permit', mayor);
+
+            try {
+                const verify_hotel = await axios.post("Hotel_Verify", data, config);
+
+                if(verify_hotel.data.msg === 'okay') {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: 'Wait to be verified by the admin.',
+                        icon: 'info',
+                    })
+                } else {
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: verify_hotel.data.msg,
+                        icon: 'info',
+                    })
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        },
         async edit() {
             const config = { 
                 headers: {
@@ -305,15 +471,35 @@ export default{
                 if(acc_info_save.data.msg === 'okay') {
                     this.account_info();
                     this.showform();
-                    alert('New profile information was changed successfully');
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: 'New profile information was changed successfully.',
+                        icon: 'info',
+                    })
                 } else if(acc_info_save.data.msg === 'duplicate email.') {
-                    alert('Email is not available. Please change your chosen email.');
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: 'Email is not available. Please change your chosen email.',
+                        icon: 'info',
+                    })
                 } else if(acc_info_save.data.msg === 'duplicate username.') {
-                    alert('Username is not available. Please change your chosen username.');
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: 'Username is not available. Please change your chosen username.',
+                        icon: 'info',
+                    })
                 } else if(acc_info_save.data.msg === 'duplicate phone.') {
-                    alert('Phone number is not available. Please change your chosen phone number.');
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: 'Phone number is not available. Please change your chosen number.',
+                        icon: 'info',
+                    })
                 } else {
-                    alert(acc_info_save.data.msg);
+                    Swal.fire({
+                        title: 'PGBooking:',
+                        text: acc_info_save.data.msg,
+                        icon: 'error',
+                    })
                 }
 
             } catch (error) {
