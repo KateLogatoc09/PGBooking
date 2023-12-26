@@ -78,9 +78,6 @@
             <div v-else-if="HotelAcc()">
             </div>
 
-            <div v-else-if="Registerhotel()">
-            </div>
-
             <div v-else-if="Verify()">
             </div>
 
@@ -200,13 +197,6 @@ export default {
       },
       HotelAcc() {
         if(this.$route.path == "/hotelacc") {
-          return true
-        } else {
-          return false
-        }
-      },
-      Registerhotel() {
-        if(this.$route.path == "/registerhotel") {
           return true
         } else {
           return false

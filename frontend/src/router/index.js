@@ -5,7 +5,6 @@ import Contact from '../views/Contact.vue'
 import About from '../views/About.vue'
 import Services from '../views/Services.vue'
 import Hotels from '../views/Hotels.vue'
-import Registerhotel from '../views/Registerhotel.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Admin from '../views/Admin.vue'
@@ -74,12 +73,6 @@ const routes = [
     name: HotelAcc,
     component: HotelAcc,
     meta: {requiresAuth: true},
-  },
-
-  {
-    path: '/Registerhotel',
-    name: Registerhotel,
-    component: Registerhotel
   },
 
   {
