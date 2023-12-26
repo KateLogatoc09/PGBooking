@@ -345,7 +345,7 @@ import Swal from 'sweetalert2';
 export default{
     data(){
         return{
-            url: "https://pgbooking.online/backend/backend/public/",
+            url: "https://pgbooking.online/backend/backend/public",
             info:[],
             show: false,
             prevurl: null,
